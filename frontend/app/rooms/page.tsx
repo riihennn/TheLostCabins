@@ -39,9 +39,9 @@ export default function Rooms() {
             <p className="font-sans font-light text-lg md:text-xl text-[#565656] leading-relaxed mb-10">
               Overlooking a lush forest, these guestrooms offer an unparalleled view of the tropical greenery.
             </p>
-            <button className="self-start border border-[#2a2a2a] text-[#2a2a2a] px-8 py-3 text-sm tracking-wider uppercase hover:bg-[#2a2a2a] hover:text-white transition-colors font-sans">
+            <Link href="/rooms/a-frame-cabin" className="self-start border border-[#2a2a2a] text-[#2a2a2a] px-8 py-3 text-sm tracking-wider uppercase hover:bg-[#2a2a2a] hover:text-white transition-colors font-sans inline-block text-center">
               View More
-            </button>
+            </Link>
           </div>
           {/* Image Right */}
           <div className="w-full lg:w-1/2 relative min-h-[400px] lg:min-h-0 order-1 lg:order-2">
@@ -70,9 +70,9 @@ export default function Rooms() {
             <p className="font-sans font-light text-lg md:text-xl text-[#565656] leading-relaxed mb-10">
               The ultimate luxury, a room that extends to a pool, which blends into nature.
             </p>
-            <button className="self-start border border-[#2a2a2a] text-[#2a2a2a] px-8 py-3 text-sm tracking-wider uppercase hover:bg-[#2a2a2a] hover:text-white transition-colors font-sans">
+            <Link href="/rooms/hexa-cabin" className="self-start border border-[#2a2a2a] text-[#2a2a2a] px-8 py-3 text-sm tracking-wider uppercase hover:bg-[#2a2a2a] hover:text-white transition-colors font-sans inline-block text-center">
               View More
-            </button>
+            </Link>
           </div>
           {/* Image Left */}
           <div className="w-full lg:w-1/2 relative min-h-[400px] lg:min-h-0 order-1 lg:order-1">
@@ -100,9 +100,9 @@ export default function Rooms() {
             <p className="font-sans font-light text-lg md:text-xl text-[#565656] leading-relaxed mb-10">
               It is not every day that you wake up to a view of the mist-covered mountain from your bed.
             </p>
-            <button className="self-start border border-[#2a2a2a] text-[#2a2a2a] px-8 py-3 text-sm tracking-wider uppercase hover:bg-[#2a2a2a] hover:text-white transition-colors font-sans">
+            <Link href="/rooms/twin-pines-cabin-1" className="self-start border border-[#2a2a2a] text-[#2a2a2a] px-8 py-3 text-sm tracking-wider uppercase hover:bg-[#2a2a2a] hover:text-white transition-colors font-sans inline-block text-center">
               View More
-            </button>
+            </Link>
           </div>
           {/* Image Right */}
           <div className="w-full lg:w-1/2 relative min-h-[400px] lg:min-h-0 order-1 lg:order-2">
@@ -130,9 +130,9 @@ export default function Rooms() {
             <p className="font-sans font-light text-lg md:text-xl text-[#565656] leading-relaxed mb-10">
               The ultimate luxury, a room that extends to a pool, which blends into nature.
             </p>
-            <button className="self-start border border-[#2a2a2a] text-[#2a2a2a] px-8 py-3 text-sm tracking-wider uppercase hover:bg-[#2a2a2a] hover:text-white transition-colors font-sans">
+            <Link href="/rooms/twin-pines-cabin-2" className="self-start border border-[#2a2a2a] text-[#2a2a2a] px-8 py-3 text-sm tracking-wider uppercase hover:bg-[#2a2a2a] hover:text-white transition-colors font-sans inline-block text-center">
               View More
-            </button>
+            </Link>
           </div>
           {/* Image Left */}
           <div className="w-full lg:w-1/2 relative min-h-[400px] lg:min-h-0 order-1 lg:order-1">

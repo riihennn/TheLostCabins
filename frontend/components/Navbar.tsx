@@ -91,8 +91,8 @@ export default function Navbar() {
 
         {/* Links Center */}
         <div className="flex-1 flex flex-col items-center justify-center gap-8 md:gap-10">
-          {['Home', 'About Us', 'Rooms', 'Contact Us'].map((item, i) => {
-            const linkPath = item === 'About Us' ? '/about' : item === 'Home' ? '/' : item === 'Rooms' ? '/rooms' : item === 'Contact Us' ? '/contact' : '#';
+          {['Home', 'About Us', 'Rooms', 'Experiences', 'Contact Us'].map((item, i) => {
+            const linkPath = item === 'About Us' ? '/about' : item === 'Home' ? '/' : item === 'Rooms' ? '/rooms' : item === 'Experiences' ? '/experiences' : item === 'Contact Us' ? '/contact' : '#';
             return (
               <div 
                 key={item} 
