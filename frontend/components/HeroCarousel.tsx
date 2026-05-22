@@ -41,12 +41,13 @@ export default function HeroCarousel() {
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`fixed inset-0 -z-10 transition-opacity duration-1000 ease-in-out ${
-            index === activeIndex ? "opacity-100" : "opacity-0 pointer-events-none"
-          }`}
-          style={{ 
+          className={`fixed inset-0 -z-10 transition-opacity duration-1000 ease-in-out ${index === activeIndex ? "opacity-100" : "opacity-0 pointer-events-none"
+            }`}
+          style={{
             transform: `scale(${1 + scrollY * 0.0001})`,
-            willChange: 'transform'
+            willChange: 'transform',
+            // Hide the fixed image entirely after scrolling past the second hero section
+            display: typeof window !== 'undefined' && scrollY > window.innerHeight * 1.5 ? 'none' : 'block'
           }}
         >
           <Image
@@ -59,18 +60,17 @@ export default function HeroCarousel() {
           <div className="absolute inset-0 bg-black/40"></div>
         </div>
       ))}
-      
+
       {/* Content */}
       <div className="relative z-10 w-full flex flex-col items-center justify-center mt-16 px-6">
         <div className="relative h-[400px] w-full max-w-6xl flex items-center justify-center">
           {slides.map((slide, index) => (
             <div
               key={`text-${index}`}
-              className={`absolute inset-0 flex flex-col items-center justify-center text-center transition-all duration-1000 ease-in-out ${
-                index === activeIndex 
-                  ? "opacity-100 translate-y-0" 
+              className={`absolute inset-0 flex flex-col items-center justify-center text-center transition-all duration-1000 ease-in-out ${index === activeIndex
+                  ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-8 pointer-events-none"
-              }`}
+                }`}
             >
               <p className="font-sans text-xs md:text-sm tracking-[0.4em] uppercase mb-6 md:mb-8 text-white/90">
                 Lost Cabins
@@ -85,10 +85,10 @@ export default function HeroCarousel() {
           ))}
         </div>
       </div>
-      
+
       {/* Scroll down indicator */}
       <div className="absolute bottom-12 right-12 z-10 hidden md:block">
-         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-white"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-white"><path d="M12 5v14M19 12l-7 7-7-7" /></svg>
       </div>
 
       {/* Dots navigation */}
@@ -97,9 +97,8 @@ export default function HeroCarousel() {
           <button
             key={`dot-${index}`}
             onClick={() => setActiveIndex(index)}
-            className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
-              index === activeIndex ? "bg-white scale-125" : "bg-white/50 hover:bg-white/75"
-            }`}
+            className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${index === activeIndex ? "bg-white scale-125" : "bg-white/50 hover:bg-white/75"
+              }`}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
