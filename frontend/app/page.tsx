@@ -27,7 +27,7 @@ export default function Home() {
         <div className="w-full max-w-[1200px] flex flex-col md:flex-row gap-10 lg:gap-16 items-center justify-center">
           {/* Text Left */}
           <div className="w-full md:w-[45%] flex flex-col max-w-[420px] md:pr-4 mb-8 md:mb-0">
-            <span className="font-serif text-[#cca885] text-[1.75rem] mb-2 tracking-wide">Rooms</span>
+            <span className="font-serif text-[#34673f] text-[1.75rem] mb-2 tracking-wide">The Cabins</span>
             <h2 className="font-serif  text-5xl md:text-6xl leading-[1.1] mb-8 text-[#2a2a2a]">
               Catchup<br />with yourself
             </h2>
@@ -76,29 +76,25 @@ export default function Home() {
           </div>
 
           {/* Text Right */}
-          <div className="w-full md:w-[45%] flex flex-col max-w-[420px] md:pl-4">
-            <span className="font-serif text-[#d0a782] text-[1.75rem] mb-2 tracking-wide">Activities</span>
-            <h2 className="font-serif text-5xl md:text-6xl leading-[1.1] mb-8 text-[#fcf9f2]">
-              Get Along.<br />Or Get Lost
+          <div className="w-full md:w-[45%] flex flex-col justify-center max-w-[500px] md:pl-8">
+            <span className="font-sans text-[11px] font-semibold tracking-[0.2em] uppercase mb-4 text-[#fcf9f2]/70">
+              Activities & Adventures
+            </span>
+            <h2 className="font-serif text-4xl md:text-[2.75rem] leading-[1.15] mb-8 text-[#fcf9f2]">
+              Curated nature experiences through the hidden beauty of Thusharagiri
             </h2>
-            <p className="text-[1.1rem] mb-10 text-[#fcf9f2] font-sans font-normal">
-              Warm up to activities that suit your pace
-            </p>
-
-            <div className="flex flex-col mb-12 w-full max-w-[420px]">
-              <div className="border-b-[1.5px] border-gray-400 pb-3 pt-2 flex justify-between items-center cursor-pointer transition-colors group">
-                <span className="font-serif text-[1.6rem] text-[#fcf9f2] group-hover:text-[#d0a782]">Forest Trekking</span>
-              </div>
-              <div className="border-b-[1.5px] border-gray-400 pb-3 pt-5 flex justify-between items-center cursor-pointer transition-colors group">
-                <span className="font-serif text-[1.6rem] text-[#fcf9f2] group-hover:text-[#d0a782]">Thusharagiri Waterfall Trails</span>
-              </div>
-              <div className="border-b-[1.5px] border-gray-400 pb-3 pt-5 flex justify-between items-center cursor-pointer transition-colors group">
-                <span className="font-serif text-[1.6rem] text-[#fcf9f2] group-hover:text-[#d0a782]">Hidden Waterfall Exploration</span>
-              </div>
+            
+            <div className="font-sans text-[0.95rem] leading-[1.8] text-[#fcf9f2]/80 space-y-6 mb-10">
+              <p>
+                Surrounded by dense forests, cascading waterfalls, and mist-covered trails, Lost Cabins offers a thoughtfully crafted escape into the wild heart of Thusharagiri. From peaceful nature walks and hidden stream explorations to thrilling adventures near the famous Thusharagiri Waterfalls, every experience is designed to reconnect you with nature.
+              </p>
+              <p>
+                Guided by the calm rhythm of the mountains and forest, your stay can be tailored to your pace — whether it’s scenic trekking, waterfall adventures, plantation trails, or quiet moments deep within the woods.
+              </p>
             </div>
 
-            <button className="self-start border border-[#fcf9f2] text-[#fcf9f2] px-6 py-2.5 text-[15px] hover:bg-[#fcf9f2] hover:text-[#565656] transition-colors font-sans rounded-[4px]">
-              View All Activities
+            <button className="self-start bg-white/10 text-[#fcf9f2] px-8 py-3.5 text-[13px] hover:bg-white/20 transition-colors font-sans tracking-wide">
+              Learn More
             </button>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -25,9 +26,9 @@ export default function Footer() {
 
         {/* Col 3 */}
         <div className="flex flex-col gap-3 font-sans font-light">
-          <a href="#" className="hover:opacity-70 transition-opacity">Contact Us</a>
-          <a href="#" className="hover:opacity-70 transition-opacity">About Us</a>
-          <a href="#" className="hover:opacity-70 transition-opacity">Rooms & Tariffs</a>
+          <Link href="/contact" className="hover:opacity-70 transition-opacity">Contact Us</Link>
+          <Link href="/about" className="hover:opacity-70 transition-opacity">About Us</Link>
+          <Link href="/rooms" className="hover:opacity-70 transition-opacity">Rooms & Tariffs</Link>
           <a href="#" className="hover:opacity-70 transition-opacity">Privacy Policy</a>
         </div>
 
