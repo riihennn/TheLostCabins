@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Carousel from "../components/Carousel";
 import HeroCarousel from "../components/HeroCarousel";
+import AnimatedSecondHero from "../components/AnimatedSecondHero";
 
 export default function Home() {
   const carouselImages = [
@@ -18,17 +19,7 @@ export default function Home() {
       <HeroCarousel />
 
       {/* Second Hero Section */}
-      <section className="min-h-[80vh] flex flex-col items-center justify-center text-center px-6 md:px-12 py-32 bg-[#fdfa99] text-[#34673f]">
-        <p className="font-sans text-xs md:text-sm tracking-[0.2em] uppercase mb-6 font-semibold">
-          Lost Cabins
-        </p>
-        <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.15] tracking-tight mb-8 max-w-4xl mx-auto">
-          A Forest Escape Wrapped in Nature’s Embrace
-        </h2>
-        <p className="font-sans text-sm md:text-base leading-relaxed max-w-2xl mx-auto opacity-90">
-          Nestled deep within the misty landscapes of Thusharagiri, Kerala, Lost Cabins offers a peaceful retreat surrounded by untouched forests, mountain breeze, and the soothing sounds of nature. Hidden away from the rush of city life, the resort is a perfectly positioned haven for travelers seeking serenity, adventure, and an authentic connection with the wild beauty of the Western Ghats.
-        </p>
-      </section>
+      <AnimatedSecondHero />
 
       {/* Rooms Section */}
       <section className="px-6 md:px-16 lg:px-32 py-24 flex flex-col md:flex-row gap-12 lg:gap-24 items-center bg-[#fdfdfc]">
@@ -133,7 +124,7 @@ export default function Home() {
       </section>
 
       {/* Follow Our Flow / Instagram Section */}
-      <section className="px-6 md:px-16 lg:px-32 py-16 text-center">
+      <section className="px-6 md:px-16 lg:px-32 py-16 text-center bg-[#fdfdfc]">
         <h2 className="font-serif text-5xl md:text-6xl mb-6 text-[#222]">Follow Our Flow</h2>
         <div className="flex items-center justify-center gap-3 mb-12 text-lg text-[#555]">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
