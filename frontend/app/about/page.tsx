@@ -59,7 +59,7 @@ export default function About() {
       <section className="max-w-[1120px] mx-auto w-full px-6 md:px-12 mb-20 md:mb-32">
         <div className="relative w-full aspect-[1120/595]">
           <Image
-            src="/images/IMG_7824.jpg"
+            src="/images/Hexa_image/IMG_7824.jpg"
             alt="Waterfall stream over rocks"
             fill
             className="object-cover"
