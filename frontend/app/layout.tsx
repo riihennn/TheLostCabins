@@ -21,8 +21,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "The Lost Cabin | Official Website | Thusaragiri, Kerala",
-  description: "Escape into the heart of Thusaragiri with luxury forest cabins, breathtaking nature views, and unforgettable stays surrounded by Kerala’s tropical wilderness.",
+  title: "The Lost Cabin | Official Website | Thusharagiri, Kerala",
+  description: "Escape into the heart of Thusharagiri with luxury forest cabins, breathtaking nature views, and unforgettable stays surrounded by Kerala’s tropical wilderness.",
 };
 
 import Navbar from "@/components/Navbar";
