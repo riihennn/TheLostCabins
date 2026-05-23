@@ -1,6 +1,12 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Experiences & Nearby Attractions | The Lost Cabins | Thusharagiri",
+  description: "Explore the best experiences near The Lost Cabins — Thusharagiri Waterfalls, Arippara Falls, Pookode Lake, and more. Plan your perfect Kerala forest getaway.",
+};
+
 
 type Experience = {
   title: string;

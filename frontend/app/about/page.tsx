@@ -1,5 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Us | The Lost Cabins | Thusharagiri, Kerala",
+  description: "Learn the story behind The Lost Cabins — a luxury boutique forest retreat nestled near Thusharagiri Waterfalls in the heart of Kerala's Western Ghats.",
+};
 
 export default function About() {
   return (

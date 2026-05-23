@@ -1,5 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Rooms & Tariffs | The Lost Cabins | Thusharagiri, Kerala",
+  description: "Discover our A-Frame Cabin, Hexa Cabin, and Twin Pines Cabins at The Lost Cabins. Luxury forest stay with pool views, forest views, and mountain views in Thusharagiri, Kerala.",
+};
 
 export default function Rooms() {
   return (
