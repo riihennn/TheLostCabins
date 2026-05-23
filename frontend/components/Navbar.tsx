@@ -69,7 +69,7 @@ export default function Navbar() {
           }`}
       >
         {/* Top Header of Overlay */}
-        <div className="w-full px-6 pt-20  md:px-12  flex justify-center items-center relative">
+        <div className="w-full px-6 pt-10  md:px-12  flex justify-center items-center relative">
           {/* Centered Logo */}
           <div className="relative w-32 h-16">
             <Image
@@ -90,7 +90,7 @@ export default function Navbar() {
         </div>
 
         {/* Links Center */}
-        <div className="flex-1 flex flex-col items-center justify-center gap-8 md:gap-10">
+        <div className="flex-1 flex flex-col items-center justify-center gap-6 md:gap-8">
           {['Home', 'About Us', 'Rooms', 'Experiences', 'Contact Us'].map((item, i) => {
             const linkPath = item === 'About Us' ? '/about' : item === 'Home' ? '/' : item === 'Rooms' ? '/rooms' : item === 'Experiences' ? '/experiences' : item === 'Contact Us' ? '/contact' : '#';
             return (
@@ -104,7 +104,7 @@ export default function Navbar() {
                     if (linkPath === '#') e.preventDefault(); 
                     setIsMenuOpen(false); 
                   }}
-                  className="font-serif text-5xl md:text-[4rem] text-[#2a2a2a] hover:text-[#34673f] transition-colors leading-tight"
+                  className="font-serif text-4xl md:text-[3.5rem] text-[#2a2a2a] hover:text-[#34673f] transition-colors leading-tight"
                 >
                   {item}
                 </a>
