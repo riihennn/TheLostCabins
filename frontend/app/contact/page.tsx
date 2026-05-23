@@ -112,10 +112,10 @@ export default function Contact() {
       <section className="w-full max-w-[1200px] mx-auto px-6 md:px-12 mb-20">
         <div className="w-full h-[400px] bg-[#eaeaea] relative">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15641.5283526131!2d76.0336214!3d11.4526615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba66a8dbfc0f07b%3A0xc3f1c998782a20b0!2sThusharagiri%20Waterfalls!5e0!3m2!1sen!2sin!4v1689255655519!5m2!1sen!2sin"
+            src="https://maps.google.com/maps?q=The%20Lost%20Cabins,%20Thusharagiri,%20Kerala&t=&z=14&ie=UTF8&iwloc=&output=embed"
             width="100%"
             height="100%"
-            style={{ border: 0, filter: "grayscale(100%) opacity(0.8)" }}
+            style={{ border: 0, filter: "grayscale(50%) opacity(0.8)" }}
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
