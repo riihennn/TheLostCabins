@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
@@ -39,7 +40,7 @@ export default function Navbar() {
     <>
       <nav className={`fixed top-0 left-0 w-full px-6 md:px-12 py-4 flex justify-between items-center z-[40] transition-all duration-300 bg-transparent ${isDark && !isMenuOpen ? 'text-black' : 'text-white'}`}>
         <div className="flex items-center gap-3">
-          <div className="relative w-20 h-10">
+          <Link href="/" className="relative w-20 h-10 block cursor-pointer">
             <Image
               src={isDark ? "/images/LostCabins-Logo-Black.png" : "/images/LostCabins-Logo-White.png"}
               alt="Lost Cabins Logo"
@@ -47,7 +48,7 @@ export default function Navbar() {
               className={`object-contain object-left scale-[1.75] origin-left transition-all duration-300 ${isDark ? 'mix-blend-multiply' : 'mix-blend-screen'} ${isMenuOpen ? 'opacity-0' : 'opacity-100'}`}
               priority
             />
-          </div>
+          </Link>
         </div>
         <div className={`flex items-center gap-8 text-sm font-sans tracking-wide transition-opacity duration-300 ${isMenuOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
           <div className="hidden md:flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity">
@@ -71,14 +72,14 @@ export default function Navbar() {
         {/* Top Header of Overlay */}
         <div className="w-full px-6 pt-10  md:px-12  flex justify-center items-center relative">
           {/* Centered Logo */}
-          <div className="relative w-32 h-16">
+          <Link href="/" onClick={() => setIsMenuOpen(false)} className="relative w-32 h-16 block cursor-pointer">
             <Image
               src="/images/LostCabins-Logo-Green.png"
               alt="Lost Cabins Logo"
               fill
               className="object-contain object-center mix-blend-multiply scale-[1.5]"
             />
-          </div>
+          </Link>
           {/* Close Button */}
           <button
             onClick={() => setIsMenuOpen(false)}

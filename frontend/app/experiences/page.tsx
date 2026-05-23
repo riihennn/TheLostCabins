@@ -2,42 +2,59 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const experiences = [
+type Experience = {
+  title: string;
+  distance: string;
+  description: string;
+  image: string;
+  readmore?: string;
+};
+
+const experiences: Experience[] = [
   {
     title: "Thusharagiri Waterfalls",
     distance: "2 km",
     description: "A stunning set of cascading waterfalls nestled in the lush Western Ghats. The name 'Thusharagiri' translates to 'snow-capped mountain'.",
-    image: "/images/IMG_7824.jpg"
+    image: "/images/Experience_image/IMG-7822.jpg",
+    readmore: "https://www.google.com/search?q=Thusharagiri+Waterfalls&rlz=1C5CHFA_enIN1187IN1187&oq=Thusharagiri+Waterfalls&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzM5OGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8"
   },
   {
     title: "Thusharagiri Bridge",
     distance: "1.5 km",
     description: "Scenic bridge in the Thusharagiri area offering picturesque views of the surrounding hills and valleys, perfect for a peaceful evening walk.",
-    image: "/images/forest_stream_1779391528482.png"
+    image: "/images/Experience_image/thusharagiri-bridge.jpg",
+    readmore: "https://www.google.com/search?q=thusharagiri+bridge&rlz=1C5CHFA_enIN1187IN1187&oq=Thusharagiri+Bridge&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMg0IARAAGJECGIAEGIoFMggIAhAAGBYYHjIICAMQABgWGB4yDQgEEAAYhgMYgAQYigUyDQgFEAAYhgMYgAQYigUyBwgGEAAY7wUyBwgHEAAY7wXSAQc5MTNqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"
+    
   },
   {
     title: "Vattachira Water Falls",
     distance: "0.5 km",
     description: "A small yet beautiful waterfall along the Thusharagiri road that's less crowded and perfect for a quiet, relaxing dip.",
-    image: "/images/IMG_7812.jpg"
+    image: "/images/Experience_image/vattachira.jpg",
+    readmore: "https://www.google.com/search?q=vattachira+waterfalls&rlz=1C5CHFA_enIN1187IN1187&oq=Thusharagiri+Bridge&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMg0IARAAGJECGIAEGIoFMggIAhAAGBYYHjIICAMQABgWGB4yDQgEEAAYhgMYgAQYigUyDQgFEAAYhgMYgAQYigUyBwgGEAAY7wUyBwgHEAAY7wXSAQc5MTNqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"
   },
   {
     title: "Thamarassery Churam Viewpoint",
     distance: "10 km",
     description: "A scenic viewpoint on the Thamarassery Ghat, offering panoramic views of the winding hills, deep valleys, and lush green landscape.",
-    image: "/images/IMG_7828.jpg"
+    image: "/images/Experience_image/viewpoint.jpg",
+    readmore: "https://www.google.com/search?q=Thamarassery+Churam+Viewpoint&rlz=1C5CHFA_enIN1187IN1187&oq=Thamarassery+Churam+Viewpoint&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg70gEHNDY3ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"
+
   },
   {
     title: "Arippara Waterfalls",
     distance: "8 km",
     description: "A scenic multi-level waterfall where the Iruvanji River cascades down rocky terrain, creating natural pools for swimming.",
-    image: "/images/IMG_7822.jpg"
+    image: "/images/Experience_image/arippara.jpg",
+    readmore: "https://www.google.com/search?q=arippara+waterfalls&rlz=1C5CHFA_enIN1187IN1187&oq=Thusharagiri+Bridge&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMg0IARAAGJECGIAEGIoFMggIAhAAGBYYHjIICAMQABgWGB4yDQgEEAAYhgMYgAQYigUyDQgFEAAYhgMYgAQYigUyBwgGEAAY7wUyBwgHEAAY7wXSAQc5MTNqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"
+
   },
   {
     title: "Pookode Lake",
     distance: "16 km",
     description: "A natural freshwater lake set against forested hills and offering paddle boating, nature walks, and a freshwater aquarium.",
-    image: "/images/IMG_7831.jpg"
+    image: "/images/Experience_image/Pookode-Lake.jpg",
+    readmore: "https://www.google.com/search?q=Pookode+Lake&rlz=1C5CHFA_enIN1187IN1187&oq=Thusharagiri+Bridge&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMg0IARAAGJECGIAEGIoFMggIAhAAGBYYHjIICAMQABgWGB4yDQgEEAAYhgMYgAQYigUyDQgFEAAYhgMYgAQYigUyBwgGEAAY7wUyBwgHEAAY7wXSAQc5MTNqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"
   }
 ];
 
@@ -92,9 +109,11 @@ export default function Experiences() {
                   {exp.description}
                 </p>
                 
-                <a href="#" className="font-sans text-[#34673f] text-sm tracking-widest uppercase hover:text-[#d0a782] transition-colors font-medium border-b border-transparent hover:border-[#d0a782] pb-1 self-start">
-                  Read More &rarr;
-                </a>
+                {exp.readmore && (
+                  <Link href={exp.readmore} target="_blank" rel="noopener noreferrer" className="font-sans text-[#34673f] text-sm tracking-widest uppercase hover:text-[#d0a782] transition-colors font-medium border-b border-transparent hover:border-[#d0a782] pb-1 self-start">
+                    Read More &rarr;
+                  </Link>
+                )}
               </div>
             </div>
           ))}

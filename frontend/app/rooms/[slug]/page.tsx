@@ -15,6 +15,7 @@ const roomsData = {
       { src: "/images/A-Frame image/IMG_7839.jpg", section: "Exterior" },
       { src: "/images/A-Frame image/IMG_7841.jpg", section: "Exterior" },
       { src: "/images/A-Frame image/IMG_7840.jpg", section: "Exterior" },
+      { src: "/images/A-Frame image/IMG_7846.jpg", section: "Exterior" },
       { src: "/images/A-Frame image/IMG_7832.jpg", section: "Living room" },
       { src: "/images/A-Frame image/IMG_7834.jpg", section: "Living room" },
       { src: "/images/A-Frame image/IMG_7833.jpg", section: "Living room" },
@@ -59,9 +60,16 @@ const roomsData = {
 };
 
 const defaultAmenities = [
-  "Luxury Bathroom", "Toiletries", "Towels", "Telephone", "Fan",
-  "Private Entrance", "Linens", "Wake-Up Service", "Coffee/Tea Maker",
-  "Free Bottled Water", "Desk", "Seating Area", "Closet", "Clothes Rack"
+  { name: "Power Backup", icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="2" y="6" width="18" height="12" rx="2" /><path d="M22 10v4" /><path d="M10 16l2-8 3 8" /></svg> },
+  { name: "Air conditioning", icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M11 6h7a2 2 0 0 1 0 4h-4M9 18h9a2 2 0 0 0 0-4h-5M3 12h18M4 6a2 2 0 0 0 0 4h3M4 18a2 2 0 0 1 0-4h4" /></svg> },
+  { name: "Family rooms", icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><path d="M9 22V12h6v10" /></svg> },
+  { name: "Family-friendly", icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg> },
+  { name: "Free Car Parking", icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M9 17V7h4a3 3 0 0 1 0 6H9" /></svg> },
+  { name: "Free Wifi", icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M5 12.55a11 11 0 0 1 14.08 0" /><path d="M1.42 9a16 16 0 0 1 21.16 0" /><path d="M8.53 16.11a6 6 0 0 1 6.95 0" /><circle cx="12" cy="20" r="1" /></svg> },
+  { name: "Housekeeping", icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M18.8 3.2L5 17 2.2 21.8l4.8-2.8L20.8 5.2a2.8 2.8 0 0 0-4-4z" /><path d="M13 11l4-4" /><path d="M8 16l4-4" /></svg> },
+  { name: "Local Experiences", icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="4" y="6" width="16" height="14" rx="2" /><path d="M2 10h20" /><path d="M8 6v14" /><path d="M16 6v14" /><path d="M4 14h16" /></svg> },
+  { name: "Pets Friendly", icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 21a9.9 9.9 0 0 1-4.8-1.2C5.4 18.7 4.5 16 4.5 14.5c0-1.8 1.5-3 3-3 .7 0 1.5.3 2 .8C10.5 13.3 11 14 12 14c1 0 1.5-.7 2.5-1.7.5-.5 1.3-.8 2-.8 1.5 0 3 1.2 3 3 0 1.5-.9 4.2-2.7 5.3A9.9 9.9 0 0 1 12 21z" /><circle cx="7.5" cy="8.5" r="1.5" /><circle cx="11.5" cy="5.5" r="1.5" /><circle cx="16.5" cy="8.5" r="1.5" /></svg> },
+  { name: "Swimming Pool", icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M2 12h20M2 16h20M2 20h20" /><path d="M6 12V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8" /><path d="M10 4v8M14 4v8" /></svg> }
 ];
 
 // Split amenities into roughly 3 columns
@@ -215,7 +223,7 @@ export default function RoomPage({ params }: { params: Promise<{ slug: string }>
                   key={index}
                   src={image.src}
                   alt={`${room.name} ${image.section} view ${index + 1}`}
-                  className="shrink-0 h-full w-auto object-cover rounded-sm"
+                  className="shrink-0 h-full w-auto object-cover"
                 />
               ))}
             </div>
@@ -252,36 +260,21 @@ export default function RoomPage({ params }: { params: Promise<{ slug: string }>
 
 
       {/* Amenities Section */}
-      <section className="max-w-[1200px] mx-auto px-6 md:px-12 mb-32 text-center">
-        <h2 className="font-serif text-5xl md:text-[4rem] text-[#2a2a2a] mb-20">
-          Amenities
-        </h2>
+      <section className="w-full pt-10 pb-20 mb-20">
+        <div className="max-w-[1200px] mx-auto px-6 md:px-12 text-center">
+          <h2 className="font-serif text-5xl md:text-[4rem] text-[#2a2a2a] mb-4">
+            Amenities
+          </h2>
+          <p className="font-sans text-lg text-[#565656] mb-16">
+            Explore the most loved facilities offered by our property.
+          </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-y-8 md:gap-y-0 gap-x-8 text-left max-w-[900px] mx-auto px-4 md:px-0">
-          {/* Col 1 */}
-          <div className="flex flex-col gap-6">
-            {col1.map((item) => (
-              <span key={item} className="font-sans font-light text-xl text-[#565656]">
-                {item}
-              </span>
-            ))}
-          </div>
-
-          {/* Col 2 */}
-          <div className="flex flex-col gap-6">
-            {col2.map((item) => (
-              <span key={item} className="font-sans font-light text-xl text-[#565656]">
-                {item}
-              </span>
-            ))}
-          </div>
-
-          {/* Col 3 */}
-          <div className="flex flex-col gap-6">
-            {col3.map((item) => (
-              <span key={item} className="font-sans font-light text-xl text-[#565656]">
-                {item}
-              </span>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-8 text-left max-w-[1000px] mx-auto px-4 md:px-0">
+            {defaultAmenities.map((item, index) => (
+              <div key={index} className="flex items-center gap-4 text-[#2a2a2a]">
+                <div className="w-6 h-6 flex-shrink-0 opacity-90">{item.icon}</div>
+                <span className="font-sans font-medium text-[15px]">{item.name}</span>
+              </div>
             ))}
           </div>
         </div>

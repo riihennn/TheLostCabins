@@ -70,8 +70,9 @@ export default function Home() {
           <div className="w-full md:w-[45%] relative aspect-[5.2/6] max-w-[500px] mb-8 md:mb-0">
             <SimpleCarousel images={[
               "/images/IMG-7822.jpg",
-              "/images/forest_stream_1779391528482.png",
-              "/images/media__1779391175363.png",
+              "/images/IMG_7845.jpg",
+              "/images/IMG_7842.jpg",
+              "/images/IMG_7847.jpg",
             ]} />
           </div>
 
