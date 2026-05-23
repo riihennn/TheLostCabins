@@ -53,7 +53,7 @@ export default function SimpleCarousel({ images }: { images: string[] }) {
       {/* Sliding Images Container with gap */}
       <div 
         className={`flex w-full h-full gap-8 ${isTransitioning ? 'transition-transform duration-700 ease-in-out' : ''}`}
-        style={{ transform: `translateX(calc(-${currentIndex * 100}% - ${currentIndex * 1}rem))` }}
+        style={{ transform: `translateX(calc(-${currentIndex * 100}% - ${currentIndex * 2}rem))` }}
         onTransitionEnd={handleTransitionEnd}
       >
         {extendedImages.map((src, index) => (
@@ -63,7 +63,7 @@ export default function SimpleCarousel({ images }: { images: string[] }) {
               alt={`Room ${index + 1}`}
               fill
               className="object-cover"
-              priority={index === 0}
+              priority={index === 0 || index === images.length}
             />
           </div>
         ))}

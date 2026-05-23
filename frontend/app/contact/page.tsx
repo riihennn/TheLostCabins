@@ -42,7 +42,7 @@ export default function Contact() {
         {/* Right Side: Contact Details */}
         <div className="w-full md:w-[300px] flex flex-col gap-10 pt-4">
            <div>
-             <span className="font-sans text-xs tracking-widest uppercase text-[#d0a782] block mb-2">Location</span>
+             <span className="font-sans text-xs tracking-widest uppercase text-[#34673f] block mb-2">Location</span>
              <p className="font-sans font-light text-lg text-[#565656] leading-relaxed">
                The Lost Cabins,<br/>
                Thusaragiri, Kerala 673586,<br/>
@@ -50,13 +50,13 @@ export default function Contact() {
              </p>
            </div>
            <div>
-             <span className="font-sans text-xs tracking-widest uppercase text-[#d0a782] block mb-2">Phone</span>
+             <span className="font-sans text-xs tracking-widest uppercase text-[#34673f] block mb-2">Phone</span>
              <p className="font-sans font-light text-lg text-[#565656]">
                <a href="tel:+919999999999" className="hover:text-[#34673f] transition-colors">+91 99999 99999</a>
              </p>
            </div>
            <div>
-             <span className="font-sans text-xs tracking-widest uppercase text-[#d0a782] block mb-2">Email</span>
+             <span className="font-sans text-xs tracking-widest uppercase text-[#34673f] block mb-2">Email</span>
              <p className="font-sans font-light text-lg text-[#565656]">
                <a href="mailto:hello@thelostcabins.com" className="hover:text-[#34673f] transition-colors">hello@thelostcabins.com</a>
              </p>
