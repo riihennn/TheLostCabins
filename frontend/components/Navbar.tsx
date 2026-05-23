@@ -116,7 +116,7 @@ export default function Navbar() {
 
         {/* Social Icons Bottom */}
         <div className={`pb-12 flex justify-center gap-8 transition-all duration-700 delay-500 ${isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-          <a href="#" className="text-[#2a2a2a] hover:text-[#34673f] transition-colors">
+          <a href="https://www.instagram.com/the_lostcabins" className="text-[#2a2a2a] hover:text-[#34673f] transition-colors">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
           </a>
           <a href="#" className="text-[#2a2a2a] hover:text-[#34673f] transition-colors">
