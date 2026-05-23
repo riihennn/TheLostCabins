@@ -8,7 +8,7 @@ export default function About() {
       <section className="flex flex-col items-center justify-center text-center px-6 md:px-12 mb-20">
         <div className="relative w-16 h-16 md:w-20 md:h-20 mb-6">
           <Image
-            src="/images/LostCabin-icon-Green.png"
+            src="/images/LostCabin-icon-green.png"
             alt="Lost Cabins Leaf Logo"
             fill
             className="object-contain"

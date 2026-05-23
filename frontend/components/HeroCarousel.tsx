@@ -12,7 +12,7 @@ const slides: Slide[] = [
   { src: "/images/IMG_7812.jpg", text: "Escape to Nature's embrace in Thusharagiri" },
   { src: "/images/areal.jpg", text: "In the heart of jungle" },
   { src: "/images/RawNature.jpg", text: "Experience raw nature" },
-  { src: "/images/IMG_7813.jpg", text: "Discover tranquility" },
+  { src: "/images/Twinpines_image/IMG_7813.jpg", text: "Discover tranquility" },
   { src: "/images/Aframe1.jpg", text: "The unforgettable place" }
 ];
 

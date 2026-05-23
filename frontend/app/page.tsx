@@ -6,6 +6,7 @@ import AnimatedSecondHero from "../components/AnimatedSecondHero";
 import SimpleCarousel from "../components/SimpleCarousel";
 import InstagramFeed from "../components/InstagramFeed";
 import { motion, useInView } from "framer-motion";
+import Link from "next/link";
 
 export default function Home() {
   const activitiesRef = useRef(null);
@@ -41,27 +42,30 @@ export default function Home() {
 
               <div className="flex flex-col mb-12 w-full max-w-[420px]">
                 <div className="border-b-[1.5px] border-gray-400 pb-3 pt-2 flex justify-between items-center cursor-pointer transition-colors group">
-                  <span className="font-serif text-[1.6rem] text-[#2a2a2a] group-hover:text-[#cca885]">Nature-Embraced Pool</span>
+                  <span className="font-serif text-[1.6rem] text-[#2a2a2a] group-hover:text-[#34673f]">Nature-Embraced Pool</span>
                 </div>
                 <div className="border-b-[1.5px] border-gray-400 pb-3 pt-5 flex justify-between items-center cursor-pointer transition-colors group">
-                  <span className="font-serif text-[1.6rem] text-[#2a2a2a] group-hover:text-[#cca885]">Forest View Room</span>
+                  <span className="font-serif text-[1.6rem] text-[#2a2a2a] group-hover:text-[#34673f]">Forest View Room</span>
                 </div>
                 <div className="border-b-[1.5px] border-gray-400 pb-3 pt-5 flex justify-between items-center cursor-pointer transition-colors group">
-                  <span className="font-serif text-[1.6rem] text-[#2a2a2a] group-hover:text-[#cca885]">Mountain View Room</span>
+                  <span className="font-serif text-[1.6rem] text-[#2a2a2a] group-hover:text-[#34673f]">Mountain View Room</span>
                 </div>
               </div>
 
-              <button className="self-start border border-[#2a2a2a] text-[#2a2a2a] px-6 py-2.5 text-[15px] hover:bg-[#2a2a2a] hover:text-[#fcf9f2] transition-colors font-sans rounded-[4px]">
+              <Link href="/rooms" className="self-start border border-[#2a2a2a] text-[#2a2a2a] px-6 py-2.5 text-[15px] hover:bg-[#2a2a2a] hover:text-[#fcf9f2] transition-colors font-sans rounded-[4px]">
                 View All Rooms
-              </button>
+              </Link>
             </div>
 
             {/* Carousel Right */}
             <div className="w-full md:w-[45%] relative aspect-[5.2/6] max-w-[500px]">
               <SimpleCarousel images={[
-                "/images/IMG_7814.jpg",
-                "/images/IMG_7816 (2).jpg",
+                "/images/IMG_7825.jpg",
+                "/images/Hexa_image/IMG_7814.jpg",
+                "/images/Hexa_image/IMG_7816.jpg",
                 "/images/IMG_7821 3.jpg",
+                "/images/IMG_7811.jpg",
+                
               ]} />
             </div>
           </div>
@@ -76,8 +80,8 @@ export default function Home() {
             {/* Carousel Left */}
             <div className="w-full md:w-[45%] relative aspect-[5.2/6] max-w-[500px] mb-8 md:mb-0">
               <SimpleCarousel images={[
-                "/images/IMG-7822.jpg",
-                "/images/IMG_7845.jpg",
+                "/images/Hexa_image/IMG_7864.jpg",
+                "/images/Twinpines_image/IMG_7845.jpg",
                 "/images/IMG_7842.jpg",
                 "/images/IMG_7847.jpg",
               ]} />
@@ -127,8 +131,8 @@ export default function Home() {
             username="@the_lostcabins"
             fallbackImages={[
               "/images/A-Frame image/IMG_7843.jpg",
-              "/images/IMG_7816 (2).jpg",
-              "/images/IMG_7813.jpg"
+              "/images/Hexa_image/IMG_7816.jpg",
+              "/images/Twinpines_image/IMG_7813.jpg"
             ]}
           />
         </section>

@@ -8,7 +8,7 @@ export default function Rooms() {
       <section className="flex flex-col items-center justify-center text-center px-6 md:px-12 mb-24 md:mb-32">
         <div className="relative w-16 h-16 md:w-20 md:h-20 mb-6">
           <Image
-            src="/images/LostCabin-icon-Green.png"
+            src="/images/LostCabin-icon-green.png"
             alt="Lost Cabins Leaf Logo"
             fill
             className="object-contain"
@@ -77,7 +77,7 @@ export default function Rooms() {
           {/* Image Left */}
           <div className="w-full lg:w-1/2 relative min-h-[400px] lg:min-h-0 order-1 lg:order-1">
             <Image
-              src="/images/IMG_7816 (2).jpg"
+              src="/images/Hexa_image/IMG_7816.jpg"
               alt="A-frame cabin"
               fill
               className="object-cover"
@@ -107,7 +107,7 @@ export default function Rooms() {
           {/* Image Right */}
           <div className="w-full lg:w-1/2 relative min-h-[400px] lg:min-h-0 order-1 lg:order-2">
             <Image
-              src="/images/IMG_7813.jpg"
+              src="/images/Twinpines_image/IMG_7813.jpg"
               alt="Mt. Forever Room"
               fill
               className="object-cover"
@@ -137,7 +137,7 @@ export default function Rooms() {
           {/* Image Left */}
           <div className="w-full lg:w-1/2 relative min-h-[400px] lg:min-h-0 order-1 lg:order-1">
             <Image
-              src="/images/IMG_7835.jpg"
+              src="/images/Twinpines_image/IMG_7835.jpg"
               alt="A-frame cabin"
               fill
               className="object-cover"

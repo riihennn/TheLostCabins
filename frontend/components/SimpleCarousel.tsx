@@ -36,7 +36,7 @@ export default function SimpleCarousel({ images }: { images: string[] }) {
   useEffect(() => {
     const timer = setInterval(() => {
       next();
-    }, 5000);
+    }, 3000);
     return () => clearInterval(timer);
   }, [currentIndex, images.length]);
 

@@ -34,14 +34,10 @@ export default function Footer() {
         </div>
 
         {/* Col 4 */}
-        <div>
-          <p className="font-sans font-light mb-4">Subscribe For Updates</p>
-          <div className="flex">
-            <input type="email" placeholder="Email" className="bg-white/10 border border-white/20 placeholder-white/60 px-4 py-3 text-sm flex-1 outline-none font-sans text-white" />
-            <button className="bg-white text-[#34673f] px-6 py-3 text-xs tracking-widest uppercase hover:bg-white/80 font-sans transition-colors">
-              Subscribe
-            </button>
-          </div>
+        <div className="flex flex-col gap-3 font-sans font-light">
+          <p className="font-medium tracking-wide uppercase text-xs mb-1 opacity-80">Get in Touch</p>
+          <a href="mailto:thelostcabins@gmail.com" className="hover:opacity-70 transition-opacity">thelostcabins@gmail.com</a>
+          <a href="tel:+91 88918 63034" className="hover:opacity-70 transition-opacity">+91 88918 63034</a>
         </div>
 
       </div>
