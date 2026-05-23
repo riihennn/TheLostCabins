@@ -63,7 +63,7 @@ export default function Home() {
                 "/images/IMG_7825.jpg",
                 "/images/Hexa_image/IMG_7814.jpg",
                 "/images/Hexa_image/IMG_7816.jpg",
-                "/images/IMG_7821 3.jpg",
+                "/images/IMG_7821_3.jpg",
                 "/images/IMG_7811.jpg",
                 
               ]} />
@@ -130,7 +130,7 @@ export default function Home() {
           <InstagramFeed 
             username="@the_lostcabins"
             fallbackImages={[
-              "/images/A-Frame image/IMG_7843.jpg",
+              "/images/A-Frame_image/IMG_7843.jpg",
               "/images/Hexa_image/IMG_7816.jpg",
               "/images/Twinpines_image/IMG_7813.jpg"
             ]}
