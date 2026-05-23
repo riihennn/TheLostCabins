@@ -31,30 +31,73 @@ const roomsData = {
     name: "Hexa Cabin",
     description: "The ultimate luxury, a room that extends to a pool, which blends into nature. Enjoy the seamless transition between indoor comfort and outdoor serenity, complete with high-end furnishings and spectacular panoramic views.",
     features: { bed: "1 King Size Bed", capacity: "Accommodates 2 Adults", view: "Private Pool View", size: "650 Sq.ft" },
-    mainImage: "/images/IMG_7816 (2).jpg",
+    mainImage: "/images/Hexa_image/IMG_7816.jpg",
     carouselImages: [
-      { src: "/images/IMG_7824.jpg", section: "Bedroom" },
-      { src: "/images/IMG_7825.jpg", section: "Pool" }
+      { src: "/images/Hexa_image/IMG_7816.jpg", section: "Exterior" },
+      { src: "/images/Hexa_image/IMG_7817.jpg", section: "Exterior" },
+      { src: "/images/Hexa_image/IMG_7822.jpg", section: "Exterior" },
+      { src: "/images/Hexa_image/IMG_7857.jpg", section: "Exterior" },
+      { src: "/images/Hexa_image/IMG_7859.jpg", section: "Exterior" },
+      { src: "/images/Hexa_image/IMG_7849.jpg", section: "Living room" },
+      { src: "/images/Hexa_image/IMG_7850.jpg", section: "Living room" },
+      { src: "/images/Hexa_image/IMG_7855.jpg", section: "Living room" },
+      { src: "/images/Hexa_image/IMG_7851.jpg", section: "Bedroom" },
+      { src: "/images/Hexa_image/IMG_7852.jpg", section: "Bedroom" },
+      { src: "/images/Hexa_image/IMG_7854.jpg", section: "Bedroom" },
+      { src: "/images/Hexa_image/IMG_7814.jpg", section: "Pool" },
+      { src: "/images/Hexa_image/IMG_7864.jpg", section: "Pool" },
+      { src: "/images/Hexa_image/IMG_7863.jpg", section: "Pool" }
     ]
   },
   "twin-pines-cabin-1": {
     name: "Twin Pines Cabin 1",
     description: "It is not every day that you wake up to a view of the mist-covered mountain from your bed. This cozy, wooden-finished cabin offers the perfect retreat for couples looking to reconnect with nature.",
     features: { bed: "1 Luxury Double Bed", capacity: "Accommodates 2 Adults", view: "Mountain View", size: "520 Sq.ft" },
-    mainImage: "/images/IMG_7813.jpg",
+    mainImage: "/images/Twinpines_image/IMG_7813.jpg",
     carouselImages: [
-      { src: "/images/IMG_7828.jpg", section: "Bedroom" },
-      { src: "/images/IMG_7831.jpg", section: "Bathroom" }
+      { src: "/images/Twinpines_image/IMG_7813.jpg", section: "Exterior" },
+      { src: "/images/Twinpines_image/IMG_7823.jpg", section: "Exterior" },
+      { src: "/images/Twinpines_image/IMG_7845.jpg", section: "Exterior" },
+      { src: "/images/Twinpines_image/IMG_7871.jpg", section: "Exterior" },
+      { src: "/images/Twinpines_image/IMG_7873.jpg", section: "Exterior" },
+      { src: "/images/Twinpines_image/IMG_7865.jpg", section: "Living room" },
+      { src: "/images/Twinpines_image/IMG_7866.jpg", section: "Living room" },
+      { src: "/images/Twinpines_image/IMG_7867.jpg", section: "Living room" },
+      { src: "/images/Twinpines_image/IMG_7872.jpg", section: "Living room" },
+      { src: "/images/Twinpines_image/IMG_7868.jpg", section: "Bedroom" },
+      { src: "/images/Twinpines_image/IMG_7869.jpg", section: "Bedroom" },
+      { src: "/images/Twinpines_image/IMG_7870.jpg", section: "Bedroom" },
+      { src: "/images/Twinpines_image/IMG_7872.jpg", section: "Bedroom" },
+      { src: "/images/Twinpines_image/IMG_7874.jpg", section: "Pool" },
+      { src: "/images/Twinpines_image/IMG_7876.jpg", section: "Pool" },
+      { src: "/images/Twinpines_image/IMG_7877.jpg", section: "Pool" },
+      { src: "/images/Twinpines_image/IMG_7878.jpg", section: "Pool" }
     ]
   },
   "twin-pines-cabin-2": {
     name: "Twin Pines Cabin 2",
     description: "Experience the calming sound of the nearby stream from the comfort of your private deck. This cabin provides a serene, secluded atmosphere surrounded by towering pines.",
     features: { bed: "1 Luxury Double Bed", capacity: "Accommodates 2 Adults", view: "Forest & Stream View", size: "520 Sq.ft" },
-    mainImage: "/images/IMG_7835.jpg",
+    mainImage: "/images/Twinpines_image/IMG_7835.jpg",
     carouselImages: [
-      { src: "/images/IMG_7823.jpg", section: "Living area" },
-      { src: "/images/IMG_7822.jpg", section: "Deck" }
+      { src: "/images/Twinpines_image/IMG_7831.jpg", section: "Exterior" },
+      { src: "/images/Twinpines_image/IMG_7835.jpg", section: "Exterior" },
+      { src: "/images/Twinpines_image/IMG_7845.jpg", section: "Exterior" },
+      { src: "/images/Twinpines_image/IMG_7871.jpg", section: "Exterior" },
+      { src: "/images/Twinpines_image/IMG_7813.jpg", section: "Exterior" },
+      { src: "/images/Twinpines_image/IMG_7873.jpg", section: "Exterior" },
+      { src: "/images/Twinpines_image/IMG_7865.jpg", section: "Living room" },
+      { src: "/images/Twinpines_image/IMG_7866.jpg", section: "Living room" },
+      { src: "/images/Twinpines_image/IMG_7867.jpg", section: "Living room" },
+      { src: "/images/Twinpines_image/IMG_7872.jpg", section: "Living room" },
+      { src: "/images/Twinpines_image/IMG_7868.jpg", section: "Bedroom" },
+      { src: "/images/Twinpines_image/IMG_7869.jpg", section: "Bedroom" },
+      { src: "/images/Twinpines_image/IMG_7870.jpg", section: "Bedroom" },
+      { src: "/images/Twinpines_image/IMG_7872.jpg", section: "Bedroom" },
+      { src: "/images/Twinpines_image/IMG_7874.jpg", section: "Pool" },
+      { src: "/images/Twinpines_image/IMG_7876.jpg", section: "Pool" },
+      { src: "/images/Twinpines_image/IMG_7877.jpg", section: "Pool" },
+      { src: "/images/Twinpines_image/IMG_7878.jpg", section: "Pool" }
     ]
   }
 };
@@ -111,11 +154,23 @@ export default function RoomPage({ params }: { params: Promise<{ slug: string }>
         const maxSlide = Math.max(0, stripWidth - containerWidth);
         
         setTranslateX(-progress * maxSlide);
-        // Estimate dot index based on scroll position
+        // Calculate active index by finding which image center is closest to container center
         const currentPos = progress * maxSlide;
-        const averageWidth = stripWidth / room.carouselImages.length;
-        const index = Math.round(currentPos / averageWidth);
-        const newIndex = Math.min(index, room.carouselImages.length - 1);
+        const stripChildren = stripRef.current.children;
+        let newIndex = 0;
+        let closestDistance = Infinity;
+        
+        for (let i = 0; i < stripChildren.length; i++) {
+          const child = stripChildren[i] as HTMLElement;
+          const childCenter = child.offsetLeft + child.offsetWidth / 2;
+          const containerCenter = currentPos + containerWidth / 2;
+          const distance = Math.abs(childCenter - containerCenter);
+          if (distance < closestDistance) {
+            closestDistance = distance;
+            newIndex = i;
+          }
+        }
+        
         setCurrentIndex(newIndex);
         
         // Trigger section transition when scrolling into a new section
@@ -125,7 +180,7 @@ export default function RoomPage({ params }: { params: Promise<{ slug: string }>
           setActiveSection(newSection);
           setShowSectionTitle(true);
           if (timeoutRef.current) clearTimeout(timeoutRef.current);
-          timeoutRef.current = setTimeout(() => setShowSectionTitle(false), 2000);
+          timeoutRef.current = setTimeout(() => setShowSectionTitle(false), 3000);
         }
       }
     };
@@ -230,10 +285,10 @@ export default function RoomPage({ params }: { params: Promise<{ slug: string }>
 
             {/* Active Section Center Overlay (Drop-down & Fade) */}
             <div 
-              className={`absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-1000 ease-[cubic-bezier(0.2,0.8,0.2,1)] ${
+              className={`absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 ease-out ${
                 showSectionTitle 
                   ? 'opacity-100 translate-y-0 scale-100' 
-                  : 'opacity-0 -translate-y-8 scale-95'
+                  : 'opacity-0 -translate-y-4 scale-95'
               }`}
             >
               <span className="font-sans font-thin text-5xl md:text-7xl tracking-[0.2em] text-white uppercase drop-shadow-[0_2px_15px_rgba(0,0,0,0.6)]">

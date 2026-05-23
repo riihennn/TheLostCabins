@@ -38,7 +38,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className={`fixed top-0 left-0 w-full px-6 md:px-12 py-4 flex justify-between items-center z-[40] transition-all duration-300 bg-transparent ${isDark && !isMenuOpen ? 'text-black' : 'text-white'}`}>
+      <nav className={`absolute md:fixed top-0 left-0 w-full px-6 md:px-12 py-4 flex justify-between items-center z-[40] transition-all duration-300 bg-transparent ${isDark && !isMenuOpen ? 'text-black' : 'text-white'}`}>
         <div className="flex items-center gap-3">
           <Link href="/" className="relative w-20 h-10 block cursor-pointer">
             <Image
@@ -95,15 +95,15 @@ export default function Navbar() {
           {['Home', 'About Us', 'Rooms', 'Experiences', 'Contact Us'].map((item, i) => {
             const linkPath = item === 'About Us' ? '/about' : item === 'Home' ? '/' : item === 'Rooms' ? '/rooms' : item === 'Experiences' ? '/experiences' : item === 'Contact Us' ? '/contact' : '#';
             return (
-              <div 
-                key={item} 
+              <div
+                key={item}
                 className={`overflow-hidden transition-all duration-700 delay-[${100 + i * 100}ms] ${isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
               >
-                <a 
-                  href={linkPath} 
-                  onClick={(e) => { 
-                    if (linkPath === '#') e.preventDefault(); 
-                    setIsMenuOpen(false); 
+                <a
+                  href={linkPath}
+                  onClick={(e) => {
+                    if (linkPath === '#') e.preventDefault();
+                    setIsMenuOpen(false);
                   }}
                   className="font-serif text-4xl md:text-[3.5rem] text-[#2a2a2a] hover:text-[#34673f] transition-colors leading-tight"
                 >
@@ -115,15 +115,15 @@ export default function Navbar() {
         </div>
 
         {/* Social Icons Bottom */}
-        <div className={`pb-12 flex justify-center gap-5 transition-all duration-700 delay-500 ${isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-          <a href="#" className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#2a2a2a] hover:bg-[#34673f] hover:text-white shadow-sm transition-colors">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        <div className={`pb-12 flex justify-center gap-8 transition-all duration-700 delay-500 ${isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          <a href="#" className="text-[#2a2a2a] hover:text-[#34673f] transition-colors">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
           </a>
-          <a href="#" className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#2a2a2a] hover:bg-[#34673f] hover:text-white shadow-sm transition-colors">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          <a href="#" className="text-[#2a2a2a] hover:text-[#34673f] transition-colors">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
           </a>
-          <a href="#" className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#2a2a2a] hover:bg-[#34673f] hover:text-white shadow-sm transition-colors">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+          <a href="#" className="text-[#2a2a2a] hover:text-[#34673f] transition-colors">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
           </a>
         </div>
       </div>

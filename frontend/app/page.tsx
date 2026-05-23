@@ -1,15 +1,15 @@
 "use client";
 
 import { useRef } from "react";
-import Image from "next/image";
 import HeroCarousel from "../components/HeroCarousel";
 import AnimatedSecondHero from "../components/AnimatedSecondHero";
 import SimpleCarousel from "../components/SimpleCarousel";
+import InstagramFeed from "../components/InstagramFeed";
 import { motion, useInView } from "framer-motion";
 
 export default function Home() {
   const activitiesRef = useRef(null);
-  const isActivitiesInView = useInView(activitiesRef, { amount: 0.6 });
+  const isActivitiesInView = useInView(activitiesRef, { amount: 0.2 });
 
   return (
     <main className="w-full overflow-x-hidden relative text-foreground">
@@ -28,9 +28,9 @@ export default function Home() {
       >
         {/* Rooms Section */}
         <section className="px-6 md:px-16 lg:px-32 min-h-screen py-12 flex items-center justify-center w-full">
-          <div className="w-full max-w-[1200px] flex flex-col md:flex-row gap-10 lg:gap-16 items-center justify-center">
+          <div className="w-full max-w-[1200px] flex flex-col-reverse md:flex-row gap-10 lg:gap-16 items-center justify-center">
             {/* Text Left */}
-            <div className="w-full md:w-[45%] flex flex-col max-w-[420px] md:pr-4 mb-8 md:mb-0">
+            <div className="w-full md:w-[45%] flex flex-col max-w-[420px] md:pr-4 mt-4 md:mt-0">
               <span className="font-serif text-[#34673f] text-[1.75rem] mb-2 tracking-wide">The Cabins</span>
               <h2 className="font-serif text-5xl md:text-6xl leading-[1.1] mb-8 text-[#2a2a2a]">
                 Catchup<br />with yourself
@@ -112,21 +112,25 @@ export default function Home() {
         <section className="px-6 md:px-16 lg:px-32 min-h-screen py-12 flex flex-col justify-center text-center">
           <h2 className="font-serif text-5xl md:text-6xl mb-6 text-[#222]">Follow Our Flow</h2>
           <div className="flex items-center justify-center gap-3 mb-12 text-lg text-[#555]">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-            <a href="#" className="hover:text-accent transition-colors font-sans font-light">Follow Us On Instagram</a>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            <a
+              href="https://www.instagram.com/the_lostcabins"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#cca885] transition-colors font-sans font-light tracking-wide"
+            >
+              @the_lostcabins
+            </a>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-2 w-full max-w-[1200px] mx-auto">
-            <div className="relative aspect-square">
-              <Image src="/images/cozy_cabin_1779391511830.png" alt="Instagram 1" fill className="object-cover" />
-            </div>
-            <div className="relative aspect-square">
-              <Image src="/images/forest_stream_1779391528482.png" alt="Instagram 2" fill className="object-cover" />
-            </div>
-            <div className="relative aspect-square">
-              <Image src="/images/media__1779391175363.png" alt="Instagram 3" fill className="object-cover" />
-            </div>
-          </div>
+          <InstagramFeed 
+            username="@the_lostcabins"
+            fallbackImages={[
+              "/images/A-Frame image/IMG_7843.jpg",
+              "/images/IMG_7816 (2).jpg",
+              "/images/IMG_7813.jpg"
+            ]}
+          />
         </section>
       </motion.div>
     </main>
