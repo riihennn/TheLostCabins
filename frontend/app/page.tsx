@@ -28,7 +28,7 @@ export default function Home() {
           {/* Text Left */}
           <div className="w-full md:w-[45%] flex flex-col max-w-[420px] md:pr-4 mb-8 md:mb-0">
             <span className="font-serif text-[#34673f] text-[1.75rem] mb-2 tracking-wide">The Cabins</span>
-            <h2 className="font-serif  text-5xl md:text-6xl leading-[1.1] mb-8 text-[#2a2a2a]">
+            <h2 className="font-serif text-5xl md:text-6xl leading-[1.1] mb-8 text-[#2a2a2a]">
               Catchup<br />with yourself
             </h2>
             <p className="text-[1.1rem] mb-10 text-[#2a2a2a] font-sans font-normal">
