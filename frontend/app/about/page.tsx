@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <main className="min-h-screen bg-[#fcf9f2] pt-40 pb-20">
+    <main className="min-h-screen bg-[#fcf9f2] pt-24 sm:pt-28 md:pt-36 lg:pt-40 pb-20">
       {/* Header Section */}
       <section className="flex flex-col items-center justify-center text-center px-6 md:px-12 mb-20">
         <div className="relative w-16 h-16 md:w-20 md:h-20 mb-6">
@@ -23,7 +23,7 @@ export default function About() {
         <span className="font-serif text-[#34673f] text-xl md:text-3xl mb-4 tracking-wide">
           About Us
         </span>
-        <h1 className="font-serif text-5xl leading-[1.2] text-[#2a2a2a] mb-6 max-w-3xl">
+        <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl leading-[1.2] text-[#2a2a2a] mb-6 max-w-3xl">
           Why we do What we do
         </h1>
         <p className="font-sans text-sm md:text-base text-[#565656] tracking-widest uppercase">
@@ -32,7 +32,7 @@ export default function About() {
       </section>
 
       {/* Image 1 - Boxed Width */}
-      <section className="max-w-[1120px] mx-auto w-full px-6 md:px-12 mb-20 md:mb-32">
+      <section className="max-w-[1120px] mx-auto w-full px-4 sm:px-6 md:px-12 mb-12 sm:mb-16 md:mb-24 lg:mb-32">
         <div className="relative w-full aspect-[1120/595]">
           <Image
             src="/images/IMG_7825.jpg"
@@ -45,7 +45,7 @@ export default function About() {
       </section>
 
       {/* Text Block 1 */}
-      <section className="max-w-4xl mx-auto px-6 md:px-12 text-center mb-20 md:mb-32">
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 md:px-12 text-center mb-12 sm:mb-16 md:mb-24 lg:mb-32">
         <p className="font-sans font-light text-lg md:text-xl lg:text-[1.35rem] leading-[1.8] text-[#2a2a2a]">
           At The Lost Cabin, we welcome you to experience the peaceful beauty of Thusharagiri. Surrounded by lush greenery, misty hills, and the soothing sounds of nature, we created this space as a quiet escape from busy city life. Located close to the breathtaking Thusharagiri Waterfalls, we offer a cozy and comfortable stay where you can relax, unwind, and reconnect with nature.
 
@@ -56,7 +56,7 @@ export default function About() {
       </section>
 
       {/* Image 2 - Boxed Width */}
-      <section className="max-w-[1120px] mx-auto w-full px-6 md:px-12 mb-20 md:mb-32">
+      <section className="max-w-[1120px] mx-auto w-full px-4 sm:px-6 md:px-12 mb-12 sm:mb-16 md:mb-24 lg:mb-32">
         <div className="relative w-full aspect-[1120/595]">
           <Image
             src="/images/Hexa_image/IMG_7824.jpg"
@@ -68,7 +68,7 @@ export default function About() {
       </section>
 
       {/* Text Block 2 */}
-      <section className="max-w-4xl mx-auto px-6 md:px-12 text-center mb-20 md:mb-32">
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 md:px-12 text-center mb-12 sm:mb-16 md:mb-24 lg:mb-32">
         <p className="font-sans font-light text-lg md:text-xl lg:text-[1.35rem] leading-[1.8] text-[#2a2a2a] mb-10">
           Our quest for excellence was not over yet and we kept on advancing, trying to
           better ourselves. That is how Lost Cabins Resort was born. Set beside a natural

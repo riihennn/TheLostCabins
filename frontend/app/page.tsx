@@ -33,7 +33,7 @@ export default function Home() {
             {/* Text Left */}
             <div className="w-full md:w-[45%] flex flex-col max-w-[420px] md:pr-4 mt-4 md:mt-0">
               <span className="font-serif text-[#34673f] text-[1.75rem] mb-2 tracking-wide">The Cabins</span>
-              <h2 className="font-serif text-5xl md:text-6xl leading-[1.1] mb-8 text-[#2a2a2a]">
+              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.1] mb-8 text-[#2a2a2a]">
                 Catchup<br />with yourself
               </h2>
               <p className="text-[1.1rem] mb-10 text-[#2a2a2a] font-sans font-normal">
@@ -42,13 +42,13 @@ export default function Home() {
 
               <div className="flex flex-col mb-12 w-full max-w-[420px]">
                 <div className="border-b-[1.5px] border-gray-400 pb-3 pt-2 flex justify-between items-center cursor-pointer transition-colors group">
-                  <span className="font-serif text-[1.6rem] text-[#2a2a2a] group-hover:text-[#34673f]">Nature-Embraced Pool</span>
+                  <span className="font-serif text-lg sm:text-xl md:text-[1.6rem] text-[#2a2a2a] group-hover:text-[#34673f]">Nature-Embraced Pool</span>
                 </div>
                 <div className="border-b-[1.5px] border-gray-400 pb-3 pt-5 flex justify-between items-center cursor-pointer transition-colors group">
-                  <span className="font-serif text-[1.6rem] text-[#2a2a2a] group-hover:text-[#34673f]">Forest View Room</span>
+                  <span className="font-serif text-lg sm:text-xl md:text-[1.6rem] text-[#2a2a2a] group-hover:text-[#34673f]">Forest View Room</span>
                 </div>
                 <div className="border-b-[1.5px] border-gray-400 pb-3 pt-5 flex justify-between items-center cursor-pointer transition-colors group">
-                  <span className="font-serif text-[1.6rem] text-[#2a2a2a] group-hover:text-[#34673f]">Mountain View Room</span>
+                  <span className="font-serif text-lg sm:text-xl md:text-[1.6rem] text-[#2a2a2a] group-hover:text-[#34673f]">Mountain View Room</span>
                 </div>
               </div>
 
@@ -92,7 +92,7 @@ export default function Home() {
               <span className="font-sans text-[11px] font-semibold tracking-[0.2em] uppercase mb-4 text-[#34673f]/80">
                 Activities & Adventures
               </span>
-              <h2 className="font-serif text-4xl md:text-[2.75rem] leading-[1.15] mb-8 text-[#34673f]">
+              <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] leading-[1.15] mb-8 text-[#34673f]">
                 Curated nature experiences through the hidden beauty of Thusharagiri
               </h2>
               
@@ -114,7 +114,7 @@ export default function Home() {
 
         {/* Follow Our Flow / Instagram Section */}
         <section className="px-6 md:px-16 lg:px-32 min-h-screen py-12 flex flex-col justify-center text-center">
-          <h2 className="font-serif text-5xl md:text-6xl mb-6 text-[#222]">Follow Our Flow</h2>
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-6 text-[#222]">Follow Our Flow</h2>
           <div className="flex items-center justify-center gap-3 mb-12 text-lg text-[#555]">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
             <a

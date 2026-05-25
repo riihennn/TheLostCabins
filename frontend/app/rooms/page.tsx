@@ -9,9 +9,9 @@ export const metadata: Metadata = {
 
 export default function Rooms() {
   return (
-    <main className="min-h-screen bg-[#fcf9f2] pt-40 pb-20">
+    <main className="min-h-screen bg-[#fcf9f2] pt-24 sm:pt-28 md:pt-36 lg:pt-40 pb-20">
       {/* Header Section */}
-      <section className="flex flex-col items-center justify-center text-center px-6 md:px-12 mb-24 md:mb-32">
+      <section className="flex flex-col items-center justify-center text-center px-4 sm:px-6 md:px-12 mb-16 sm:mb-20 md:mb-24 lg:mb-32">
         <div className="relative w-16 h-16 md:w-20 md:h-20 mb-6">
           <Image
             src="/images/LostCabin-icon-green.png"
@@ -23,7 +23,7 @@ export default function Rooms() {
         <span className="font-serif text-[#34673f] text-xl md:text-3xl mb-4 tracking-wide">
           Rooms
         </span>
-        <h1 className="font-serif text-5xl md:text-6xl lg:text-[5rem] leading-[1.1] text-[#2a2a2a] mb-6 max-w-4xl">
+        <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[5rem] leading-[1.1] text-[#2a2a2a] mb-6 max-w-4xl">
           Catchup with yourself
         </h1>
         <p className="font-sans text-lg md:text-xl text-[#565656]">
@@ -32,25 +32,25 @@ export default function Rooms() {
       </section>
 
       {/* Room 1 */}
-      <section className="max-w-[1300px] mx-auto px-6 md:px-12 mb-16 md:mb-24">
+      <section className="max-w-[1300px] mx-auto px-4 sm:px-6 md:px-12 mb-10 sm:mb-16 md:mb-24">
         <div className="bg-white flex flex-col lg:flex-row w-full lg:min-h-[550px]">
           {/* Text Left */}
-          <div className="w-full lg:w-1/2 flex flex-col justify-center px-8 py-16 md:px-16 lg:px-24 order-2 lg:order-1">
-            <span className="font-serif text-[#34673f] text-xl md:text-2xl mb-2 tracking-wide">
+          <div className="w-full lg:w-1/2 flex flex-col justify-center px-6 py-10 sm:px-10 sm:py-12 md:px-16 md:py-16 lg:px-20 xl:px-24 order-2 lg:order-1">
+            <span className="font-serif text-[#34673f] text-lg sm:text-xl md:text-2xl mb-2 tracking-wide">
               Forest View Room
             </span>
-            <h2 className="font-serif text-5xl md:text-6xl lg:text-[4rem] leading-[1.1] text-[#2a2a2a] mb-8">
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[4rem] leading-[1.1] text-[#2a2a2a] mb-6 sm:mb-8">
               A-Frame Cabin
             </h2>
-            <p className="font-sans font-light text-lg md:text-xl text-[#565656] leading-relaxed mb-10">
+            <p className="font-sans font-light text-base sm:text-lg md:text-xl text-[#565656] leading-relaxed mb-8 sm:mb-10">
               Overlooking a lush forest, these guestrooms offer an unparalleled view of the tropical greenery.
             </p>
-            <Link href="/rooms/a-frame-cabin" className="self-start border border-[#2a2a2a] text-[#2a2a2a] px-8 py-3 text-sm tracking-wider uppercase hover:bg-[#2a2a2a] hover:text-white transition-colors font-sans inline-block text-center">
+            <Link href="/rooms/a-frame-cabin" className="self-start border border-[#2a2a2a] text-[#2a2a2a] px-6 sm:px-8 py-3 text-sm tracking-wider uppercase hover:bg-[#2a2a2a] hover:text-white transition-colors font-sans inline-block text-center">
               View More
             </Link>
           </div>
           {/* Image Right */}
-          <div className="w-full lg:w-1/2 relative min-h-[400px] lg:min-h-0 order-1 lg:order-2">
+          <div className="w-full lg:w-1/2 relative min-h-[280px] sm:min-h-[350px] md:min-h-[400px] lg:min-h-0 order-1 lg:order-2">
             <Image
               src="/images/Aframe1.jpg"
               alt="A-frame cabin"
@@ -63,28 +63,28 @@ export default function Rooms() {
       </section>
 
       {/* Room 2 */}
-      <section className="max-w-[1300px] mx-auto px-6 md:px-12 mb-16 md:mb-24">
+      <section className="max-w-[1300px] mx-auto px-4 sm:px-6 md:px-12 mb-10 sm:mb-16 md:mb-24">
         <div className="bg-white flex flex-col lg:flex-row w-full lg:min-h-[550px]">
           {/* Text Right */}
-          <div className="w-full lg:w-1/2 flex flex-col justify-center px-8 py-16 md:px-16 lg:px-24 order-2 lg:order-2">
-            <span className="font-serif text-[#34673f] text-xl md:text-2xl mb-2 tracking-wide">
+          <div className="w-full lg:w-1/2 flex flex-col justify-center px-6 py-10 sm:px-10 sm:py-12 md:px-16 md:py-16 lg:px-20 xl:px-24 order-2 lg:order-2">
+            <span className="font-serif text-[#34673f] text-lg sm:text-xl md:text-2xl mb-2 tracking-wide">
               Pool view
             </span>
-            <h2 className="font-serif text-5xl md:text-6xl lg:text-[4rem] leading-[1.1] text-[#2a2a2a] mb-8">
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[4rem] leading-[1.1] text-[#2a2a2a] mb-6 sm:mb-8">
               Hexa Cabin
             </h2>
-            <p className="font-sans font-light text-lg md:text-xl text-[#565656] leading-relaxed mb-10">
+            <p className="font-sans font-light text-base sm:text-lg md:text-xl text-[#565656] leading-relaxed mb-8 sm:mb-10">
               The ultimate luxury, a room that extends to a pool, which blends into nature.
             </p>
-            <Link href="/rooms/hexa-cabin" className="self-start border border-[#2a2a2a] text-[#2a2a2a] px-8 py-3 text-sm tracking-wider uppercase hover:bg-[#2a2a2a] hover:text-white transition-colors font-sans inline-block text-center">
+            <Link href="/rooms/hexa-cabin" className="self-start border border-[#2a2a2a] text-[#2a2a2a] px-6 sm:px-8 py-3 text-sm tracking-wider uppercase hover:bg-[#2a2a2a] hover:text-white transition-colors font-sans inline-block text-center">
               View More
             </Link>
           </div>
           {/* Image Left */}
-          <div className="w-full lg:w-1/2 relative min-h-[400px] lg:min-h-0 order-1 lg:order-1">
+          <div className="w-full lg:w-1/2 relative min-h-[280px] sm:min-h-[350px] md:min-h-[400px] lg:min-h-0 order-1 lg:order-1">
             <Image
               src="/images/Hexa_image/IMG_7816.jpg"
-              alt="A-frame cabin"
+              alt="Hexa cabin"
               fill
               className="object-cover"
             />
@@ -93,25 +93,25 @@ export default function Rooms() {
       </section>
 
       {/* Room 3 */}
-      <section className="max-w-[1300px] mx-auto px-6 md:px-12 mb-24 md:mb-32">
+      <section className="max-w-[1300px] mx-auto px-4 sm:px-6 md:px-12 mb-10 sm:mb-16 md:mb-24 lg:mb-32">
         <div className="bg-white flex flex-col lg:flex-row w-full lg:min-h-[550px]">
           {/* Text Left */}
-          <div className="w-full lg:w-1/2 flex flex-col justify-center px-8 py-16 md:px-16 lg:px-24 order-2 lg:order-1">
-            <span className="font-serif text-[#34673f] text-xl md:text-2xl mb-2 tracking-wide">
+          <div className="w-full lg:w-1/2 flex flex-col justify-center px-6 py-10 sm:px-10 sm:py-12 md:px-16 md:py-16 lg:px-20 xl:px-24 order-2 lg:order-1">
+            <span className="font-serif text-[#34673f] text-lg sm:text-xl md:text-2xl mb-2 tracking-wide">
               Mountain View
             </span>
-            <h2 className="font-serif text-5xl md:text-6xl lg:text-[4rem] leading-[1.1] text-[#2a2a2a] mb-8">
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[4rem] leading-[1.1] text-[#2a2a2a] mb-6 sm:mb-8">
               Twin Pines Cabin 1
             </h2>
-            <p className="font-sans font-light text-lg md:text-xl text-[#565656] leading-relaxed mb-10">
+            <p className="font-sans font-light text-base sm:text-lg md:text-xl text-[#565656] leading-relaxed mb-8 sm:mb-10">
               It is not every day that you wake up to a view of the mist-covered mountain from your bed.
             </p>
-            <Link href="/rooms/twin-pines-cabin-1" className="self-start border border-[#2a2a2a] text-[#2a2a2a] px-8 py-3 text-sm tracking-wider uppercase hover:bg-[#2a2a2a] hover:text-white transition-colors font-sans inline-block text-center">
+            <Link href="/rooms/twin-pines-cabin-1" className="self-start border border-[#2a2a2a] text-[#2a2a2a] px-6 sm:px-8 py-3 text-sm tracking-wider uppercase hover:bg-[#2a2a2a] hover:text-white transition-colors font-sans inline-block text-center">
               View More
             </Link>
           </div>
           {/* Image Right */}
-          <div className="w-full lg:w-1/2 relative min-h-[400px] lg:min-h-0 order-1 lg:order-2">
+          <div className="w-full lg:w-1/2 relative min-h-[280px] sm:min-h-[350px] md:min-h-[400px] lg:min-h-0 order-1 lg:order-2">
             <Image
               src="/images/Twinpines_image/IMG_7813.jpg"
               alt="Mt. Forever Room"
@@ -123,28 +123,28 @@ export default function Rooms() {
       </section>
 
       {/* Room 4 */}
-      <section className="max-w-[1300px] mx-auto px-6 md:px-12 mb-16 md:mb-24">
+      <section className="max-w-[1300px] mx-auto px-4 sm:px-6 md:px-12 mb-10 sm:mb-16 md:mb-24">
         <div className="bg-white flex flex-col lg:flex-row w-full lg:min-h-[550px]">
           {/* Text Right */}
-          <div className="w-full lg:w-1/2 flex flex-col justify-center px-8 py-16 md:px-16 lg:px-24 order-2 lg:order-2">
-            <span className="font-serif text-[#34673f] text-xl md:text-2xl mb-2 tracking-wide">
+          <div className="w-full lg:w-1/2 flex flex-col justify-center px-6 py-10 sm:px-10 sm:py-12 md:px-16 md:py-16 lg:px-20 xl:px-24 order-2 lg:order-2">
+            <span className="font-serif text-[#34673f] text-lg sm:text-xl md:text-2xl mb-2 tracking-wide">
               Pool view
             </span>
-            <h2 className="font-serif text-5xl md:text-6xl lg:text-[4rem] leading-[1.1] text-[#2a2a2a] mb-8">
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[4rem] leading-[1.1] text-[#2a2a2a] mb-6 sm:mb-8">
               Twin Pines Cabin 2
             </h2>
-            <p className="font-sans font-light text-lg md:text-xl text-[#565656] leading-relaxed mb-10">
+            <p className="font-sans font-light text-base sm:text-lg md:text-xl text-[#565656] leading-relaxed mb-8 sm:mb-10">
               The ultimate luxury, a room that extends to a pool, which blends into nature.
             </p>
-            <Link href="/rooms/twin-pines-cabin-2" className="self-start border border-[#2a2a2a] text-[#2a2a2a] px-8 py-3 text-sm tracking-wider uppercase hover:bg-[#2a2a2a] hover:text-white transition-colors font-sans inline-block text-center">
+            <Link href="/rooms/twin-pines-cabin-2" className="self-start border border-[#2a2a2a] text-[#2a2a2a] px-6 sm:px-8 py-3 text-sm tracking-wider uppercase hover:bg-[#2a2a2a] hover:text-white transition-colors font-sans inline-block text-center">
               View More
             </Link>
           </div>
           {/* Image Left */}
-          <div className="w-full lg:w-1/2 relative min-h-[400px] lg:min-h-0 order-1 lg:order-1">
+          <div className="w-full lg:w-1/2 relative min-h-[280px] sm:min-h-[350px] md:min-h-[400px] lg:min-h-0 order-1 lg:order-1">
             <Image
               src="/images/Twinpines_image/IMG_7835.jpg"
-              alt="A-frame cabin"
+              alt="Twin Pines Cabin 2"
               fill
               className="object-cover"
             />

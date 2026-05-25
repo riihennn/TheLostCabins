@@ -44,13 +44,13 @@ export default function Contact() {
         <span className="font-serif text-[#34673f] text-xl md:text-3xl mb-4 tracking-wide">
           Contact Us
         </span>
-        <h1 className="font-serif text-5xl md:text-6xl lg:text-[5rem] leading-[1.1] text-[#2a2a2a]">
+        <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[5rem] leading-[1.1] text-[#2a2a2a]">
           Get in touch
         </h1>
       </section>
 
       {/* Main Content Area */}
-      <section className="w-full max-w-[1000px] mx-auto px-6 md:px-12 mb-20 flex flex-col md:flex-row gap-16 md:gap-24">
+      <section className="w-full max-w-[1000px] mx-auto px-4 sm:px-6 md:px-12 mb-20 flex flex-col md:flex-row gap-12 md:gap-16 lg:gap-24">
         
         {/* Left Side: Clean Form */}
         <div className="flex-1">
@@ -109,8 +109,8 @@ export default function Contact() {
       </section>
 
       {/* Clean Map */}
-      <section className="w-full max-w-[1200px] mx-auto px-6 md:px-12 mb-20">
-        <div className="w-full h-[400px] bg-[#eaeaea] relative">
+      <section className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 md:px-12 mb-20">
+        <div className="w-full h-[260px] sm:h-[320px] md:h-[400px] bg-[#eaeaea] relative">
           <iframe
             src="https://maps.google.com/maps?q=The%20Lost%20Cabins,%20Thusharagiri,%20Kerala&t=&z=14&ie=UTF8&iwloc=&output=embed"
             width="100%"

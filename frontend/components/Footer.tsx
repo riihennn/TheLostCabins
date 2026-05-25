@@ -8,7 +8,7 @@ export default function Footer() {
 
         {/* Col 1 */}
         <div className="flex items-start">
-          <div className="relative w-37 h-21">
+          <div className="relative w-[148px] h-[80px]">
             <Image
               src="/images/LostCabins-Logo-White.png"
               alt="The Lost Cabins Logo"

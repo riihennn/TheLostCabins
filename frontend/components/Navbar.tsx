@@ -38,7 +38,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className={`absolute md:fixed top-0 left-0 w-full px-6 md:px-12 py-4 flex justify-between items-center z-[40] transition-all duration-300 bg-transparent ${isDark && !isMenuOpen ? 'text-black' : 'text-white'}`}>
+      <nav className={`fixed top-0 left-0 w-full px-4 sm:px-6 md:px-12 py-4 flex justify-between items-center z-[40] transition-all duration-300 bg-transparent ${isDark && !isMenuOpen ? 'text-black' : 'text-white'}`}>
         <div className="flex items-center gap-3">
           <Link href="/" className="relative w-20 h-10 block cursor-pointer">
             <Image
@@ -105,7 +105,7 @@ export default function Navbar() {
                     if (linkPath === '#') e.preventDefault();
                     setIsMenuOpen(false);
                   }}
-                  className="font-serif text-4xl md:text-[3.5rem] text-[#2a2a2a] hover:text-[#34673f] transition-colors leading-tight"
+                  className="font-serif text-3xl sm:text-4xl md:text-[3.5rem] text-[#2a2a2a] hover:text-[#34673f] transition-colors leading-tight"
                 >
                   {item}
                 </a>
