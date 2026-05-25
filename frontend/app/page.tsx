@@ -77,8 +77,8 @@ export default function Home() {
           className="px-6 md:px-16 lg:px-32 min-h-screen py-12 flex items-center justify-center w-full"
         >
           <div className="w-full max-w-[1200px] flex flex-col md:flex-row gap-10 lg:gap-16 items-center justify-center">
-            {/* Carousel Left */}
-            <div className="w-full md:w-[45%] relative aspect-[5.2/6] max-w-[500px] mb-8 md:mb-0">
+            {/* Carousel Left (Desktop Only) */}
+            <div className="hidden md:block w-full md:w-[45%] relative aspect-[5.2/6] max-w-[500px]">
               <SimpleCarousel images={[
                 "/images/Hexa_image/IMG_7864.jpg",
                 "/images/Twinpines_image/IMG_7845.jpg",
@@ -96,6 +96,16 @@ export default function Home() {
                 Curated nature experiences through the hidden beauty of Thusharagiri
               </h2>
               
+              {/* Carousel Center (Mobile Only - between heading and writing) */}
+              <div className="md:hidden w-full relative aspect-[5.2/6] mb-8">
+                <SimpleCarousel images={[
+                  "/images/Hexa_image/IMG_7864.jpg",
+                  "/images/Twinpines_image/IMG_7845.jpg",
+                  "/images/IMG_7842.jpg",
+                  "/images/IMG_7847.jpg",
+                ]} />
+              </div>
+
               <div className="font-sans text-[0.95rem] leading-[1.8] text-[#34673f]/90 space-y-6 mb-10">
                 <p>
                   Surrounded by dense forests, cascading waterfalls, and mist-covered trails, Lost Cabins offers a thoughtfully crafted escape into the wild heart of Thusharagiri. From peaceful nature walks and hidden stream explorations to thrilling adventures near the famous Thusharagiri Waterfalls, every experience is designed to reconnect you with nature.
