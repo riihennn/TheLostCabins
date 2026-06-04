@@ -9,24 +9,24 @@ export const metadata: Metadata = {
 
 export default function Rooms() {
   return (
-    <main className="min-h-screen bg-[#fcf9f2] pt-24 sm:pt-28 md:pt-36 lg:pt-40 pb-20">
+    <main className="min-h-screen bg-[#fcf9f2] pt-36 sm:pt-40 md:pt-44 lg:pt-48 pb-20">
       {/* Header Section */}
       <section className="flex flex-col items-center justify-center text-center px-4 sm:px-6 md:px-12 mb-16 sm:mb-20 md:mb-24 lg:mb-32">
-        <div className="relative w-16 h-16 md:w-20 md:h-20 mb-6">
+        <div className="relative w-[70px] h-[70px] md:w-20 md:h-20 mb-4 md:mb-6">
           <Image
             src="/images/LostCabin-icon-green.png"
             alt="Lost Cabins Leaf Logo"
             fill
-            className="object-contain"
+            className="object-contain mix-blend-multiply opacity-90"
           />
         </div>
-        <span className="font-serif text-[#34673f] text-xl md:text-3xl mb-4 tracking-wide">
+        <span className="font-sans text-[#34673f] text-[22px] md:text-3xl mb-3 tracking-wide">
           Rooms
         </span>
-        <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[5rem] leading-[1.1] text-[#2a2a2a] mb-6 max-w-4xl">
+        <h1 className="font-sans font-light text-[42px] sm:text-5xl md:text-6xl lg:text-[5rem] leading-[1.15] text-[#2a2a2a] mb-5 max-w-4xl tracking-tight">
           Catchup with yourself
         </h1>
-        <p className="font-sans text-lg md:text-xl text-[#565656]">
+        <p className="font-sans font-medium text-[15px] md:text-lg text-[#333333]">
           A place to slow down, to give yourself time.
         </p>
       </section>

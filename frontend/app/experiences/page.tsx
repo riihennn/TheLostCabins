@@ -66,21 +66,21 @@ const experiences: Experience[] = [
 
 export default function Experiences() {
   return (
-    <main className="min-h-screen bg-[#fcf9f2] pt-32 lg:pt-40 pb-0 flex flex-col items-center">
+    <main className="min-h-screen bg-[#fcf9f2] pt-36 sm:pt-40 lg:pt-48 pb-0 flex flex-col items-center">
       {/* Header Section */}
-      <section className="flex flex-col items-center justify-center text-center px-6 md:px-12 mb-16 lg:mb-24">
-        <div className="relative w-16 h-16 md:w-20 md:h-20 mb-6">
+      <section className="flex flex-col items-center justify-center text-center px-4 sm:px-6 md:px-12 mb-16 sm:mb-20 md:mb-24 lg:mb-32">
+        <div className="relative w-[70px] h-[70px] md:w-20 md:h-20 mb-4 md:mb-6">
           <Image
             src="/images/LostCabin-icon-green.png"
             alt="Lost Cabins Leaf Logo"
             fill
-            className="object-contain"
+            className="object-contain mix-blend-multiply opacity-90"
           />
         </div>
-        <span className="font-serif text-[#34673f] text-xl md:text-3xl mb-4 tracking-wide">
+        <span className="font-sans text-[#34673f] text-[22px] md:text-3xl mb-3 tracking-wide">
           Experiences
         </span>
-        <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.2] text-[#2a2a2a] max-w-4xl">
+        <h1 className="font-sans font-light text-[42px] sm:text-5xl md:text-6xl lg:text-[5rem] leading-[1.15] text-[#2a2a2a] mb-5 max-w-4xl tracking-tight">
           Nearby Attractions <br className="hidden md:block" />& Travel Options
         </h1>
       </section>
