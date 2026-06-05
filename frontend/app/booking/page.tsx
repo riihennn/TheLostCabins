@@ -155,6 +155,22 @@ export default function Book() {
         </div>
       </section>
 
+      {/* Clean Map */}
+      <section className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 md:px-12 mb-20">
+        <div className="w-full h-[260px] sm:h-[320px] md:h-[400px] bg-[#eaeaea] relative">
+          <iframe
+            src="https://maps.google.com/maps?q=The%20Lost%20Cabins,%20Thusharagiri,%20Kerala&t=&z=14&ie=UTF8&iwloc=&output=embed"
+            width="100%"
+            height="100%"
+            style={{ border: 0, filter: "grayscale(50%) opacity(0.8)" }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="absolute inset-0"
+          ></iframe>
+        </div>
+      </section>
+
       {/* Back to Home */}
       <section className="flex justify-center items-center pb-24">
         <Link href="/" className="flex items-center gap-3 font-sans text-[#2a2a2a] hover:text-[#34673f] transition-colors group">
