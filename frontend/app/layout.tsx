@@ -23,15 +23,6 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "The Lost Cabin | Official Website | Thusharagiri, Kerala",
   description: "Escape into the heart of Thusharagiri with luxury forest cabins, breathtaking nature views, and unforgettable stays surrounded by Kerala’s tropical wilderness.",
-  icons: {
-    icon: [
-      { url: '/favicon.ico' },
-      { url: '/images/LostCabin-icon-green.png', type: 'image/png' },
-    ],
-    apple: [
-      { url: '/images/LostCabin-icon-green.png' }
-    ]
-  }
 };
 
 import Navbar from "@/components/Navbar";
