@@ -242,9 +242,9 @@ export default function RoomPage({ params }: { params: Promise<{ slug: string }>
             </div>
           </div>
 
-          <button className="self-start border border-[#2a2a2a] text-[#2a2a2a] px-8 py-3 text-sm tracking-wider uppercase hover:bg-[#2a2a2a] hover:text-white transition-colors font-sans">
+          <Link href={`/booking?cabin=${encodeURIComponent(room.name)}`} className="self-start border border-[#2a2a2a] text-[#2a2a2a] px-8 py-3 text-sm tracking-wider uppercase hover:bg-[#2a2a2a] hover:text-white transition-colors font-sans">
             Book Online
-          </button>
+          </Link>
         </div>
       </section>
 
