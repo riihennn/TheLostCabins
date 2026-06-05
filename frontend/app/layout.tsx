@@ -22,7 +22,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "The Lost Cabins | Official Resort Website | Thusharagiri, Kerala",
-  description: "Escape into the heart of Thusharagiri with luxury forest cabins, breathtaking nature views, and unforgettable stays surrounded by Kerala’s tropical wilderness.",
+  description: "Escape to The Lost Cabins, a unique resort near Thusharagiri Waterfalls, Kerala. Enjoy comfortable cabin accommodations, natural surroundings, and unforgettable experiences for couples, families, and groups.",
 };
 
 import Navbar from "@/components/Navbar";
