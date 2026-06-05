@@ -25,15 +25,71 @@ export async function POST(request: Request) {
       replyTo: email,
       subject: `New Inquiry from ${name} - Lost Cabins`,
       html: `
-        <div style="font-family: sans-serif; color: #2a2a2a; max-width: 600px;">
-          <h2 style="color: #34673f; border-bottom: 1px solid #eaeaea; padding-bottom: 10px;">New Contact Form Submission</h2>
-          <p><strong>Name:</strong> ${name}</p>
-          <p><strong>Email:</strong> ${email}</p>
-          <p><strong>Phone:</strong> ${phone || 'Not provided'}</p>
-          <br/>
-          <h3 style="color: #34673f;">Message:</h3>
-          <p style="background: #f4f1ea; padding: 15px; border-radius: 4px; white-space: pre-wrap;">${message}</p>
-        </div>
+        <!DOCTYPE html>
+        <html>
+        <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+        <body style="margin: 0; padding: 0; background-color: #f6f8f6; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased;">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #f6f8f6; padding: 40px 0;">
+            <tr>
+              <td align="center">
+                <table width="600" border="0" cellspacing="0" cellpadding="0" style="background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                  <!-- Header -->
+                  <tr>
+                    <td style="background-color: #34673f; padding: 35px; text-align: center;">
+                      <h1 style="color: #ffffff; margin: 0; font-size: 26px; font-weight: 500; letter-spacing: 1px;">Lost Cabins</h1>
+                      <p style="color: #c9dfcf; margin: 10px 0 0 0; font-size: 14px; text-transform: uppercase; letter-spacing: 2px;">New Inquiry Received</p>
+                    </td>
+                  </tr>
+                  
+                  <!-- Content -->
+                  <tr>
+                    <td style="padding: 40px 35px;">
+                      <p style="color: #555555; font-size: 16px; line-height: 24px; margin: 0 0 25px 0;">You have received a new contact form submission from the website.</p>
+                      
+                      <!-- Details Table -->
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #f9f9f9; border-radius: 8px; padding: 25px; margin-bottom: 35px; border: 1px solid #eeeeee;">
+                        <tr>
+                          <td style="padding-bottom: 15px;">
+                            <span style="color: #888888; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">Name</span><br>
+                            <span style="color: #222222; font-size: 18px; font-weight: 500; display: inline-block; margin-top: 4px;">${name}</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding-bottom: 15px;">
+                            <span style="color: #888888; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">Email Address</span><br>
+                            <a href="mailto:${email}" style="color: #34673f; font-size: 18px; text-decoration: none; font-weight: 500; display: inline-block; margin-top: 4px;">${email}</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span style="color: #888888; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">Phone Number</span><br>
+                            <span style="color: #222222; font-size: 18px; font-weight: 500; display: inline-block; margin-top: 4px;">${phone || 'Not provided'}</span>
+                          </td>
+                        </tr>
+                      </table>
+
+                      <!-- Message Section -->
+                      <h3 style="color: #34673f; font-size: 14px; margin: 0 0 15px 0; text-transform: uppercase; letter-spacing: 1.5px; border-bottom: 1px solid #eeeeee; padding-bottom: 10px;">Message Contents</h3>
+                      <div style="background-color: #f4f1ea; padding: 25px; border-radius: 8px; color: #444444; font-size: 16px; line-height: 28px; white-space: pre-wrap; border-left: 4px solid #34673f; margin-top: 15px;">${message}</div>
+                    </td>
+                  </tr>
+                  
+                  <!-- Footer -->
+                  <tr>
+                    <td style="background-color: #f9f9f9; border-top: 1px solid #eeeeee; padding: 25px; text-align: center;">
+                      <p style="color: #999999; font-size: 13px; margin: 0; line-height: 20px;">This email was automatically generated from the Lost Cabins website contact form.</p>
+                      <p style="color: #999999; font-size: 13px; margin: 8px 0 0 0; line-height: 20px;">You can simply <strong>reply</strong> to this email to respond directly to ${name}.</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </body>
+        </html>
       `,
     });
 
