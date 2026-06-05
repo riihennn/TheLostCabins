@@ -94,8 +94,8 @@ export default function Navbar() {
 
           {/* Links Center */}
           <div className="my-auto flex flex-col items-center gap-6 md:gap-8 py-12 flex-shrink-0">
-            {['Home', 'About Us', 'Rooms', 'Experiences', 'Contact Us', 'Book Online'].map((item, i) => {
-              const linkPath = item === 'About Us' ? '/about' : item === 'Home' ? '/' : item === 'Rooms' ? '/rooms' : item === 'Experiences' ? '/experiences' : item === 'Contact Us' ? '/contact' : item === 'Book Online' ? '/booking' : '#';
+            {['Home', 'About Us', 'Rooms', 'Experiences', 'Contact Us'].map((item, i) => {
+              const linkPath = item === 'About Us' ? '/about' : item === 'Home' ? '/' : item === 'Rooms' ? '/rooms' : item === 'Experiences' ? '/experiences' : item === 'Contact Us' ? '/contact' : '#';
               return (
                 <div
                   key={item}

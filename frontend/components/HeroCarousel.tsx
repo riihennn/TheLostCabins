@@ -91,18 +91,7 @@ export default function HeroCarousel() {
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-white"><path d="M12 5v14M19 12l-7 7-7-7" /></svg>
       </div>
 
-      {/* Dots navigation */}
-      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 z-10 flex gap-4">
-        {slides.map((_, index) => (
-          <button
-            key={`dot-${index}`}
-            onClick={() => setActiveIndex(index)}
-            className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${index === activeIndex ? "bg-white scale-125" : "bg-white/50 hover:bg-white/75"
-              }`}
-            aria-label={`Go to slide ${index + 1}`}
-          />
-        ))}
-      </div>
+
     </section>
   );
 }
