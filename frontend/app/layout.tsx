@@ -109,6 +109,27 @@ export default function RootLayout({
       className={`${playfair.variable} ${inter.variable} ${stylishFont.variable}`}
     >
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Resort",
+              "name": "The Lost Cabins",
+              "image": "https://www.thelostcabins.in/images/areal.jpg",
+              "description": "Premium nature resort in Thusharagiri offering secluded A-Frame, Hexa, and Twin Pines cabins.",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Thusharagiri",
+                "addressRegion": "Kerala",
+                "addressCountry": "IN"
+              },
+              "telephone": "+91-8590203812",
+              "url": "https://www.thelostcabins.in",
+              "priceRange": "$$"
+            })
+          }}
+        />
         <SmoothScroll>
           <Navbar />
           {children}
