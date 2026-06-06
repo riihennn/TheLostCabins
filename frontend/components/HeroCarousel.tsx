@@ -86,11 +86,6 @@ export default function HeroCarousel() {
         </div>
       </div>
 
-      {/* Scroll down indicator */}
-      <div className="absolute bottom-12 right-12 z-10 hidden md:block">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-white"><path d="M12 5v14M19 12l-7 7-7-7" /></svg>
-      </div>
-
 
     </section>
   );
