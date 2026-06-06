@@ -9,7 +9,7 @@ const roomsMeta: Record<string, { title: string; description: string; keywords: 
       "A-Frame cabin Kerala",
       "glass wall cabin Thusharagiri",
       "forest view cabin Kerala",
-      "luxury cabin stay Kerala",
+      "secluded cabin stay Kerala",
       "romantic cabin Thusharagiri",
       "cabin with pool Kerala",
       "The Lost Cabins A-Frame",
@@ -61,8 +61,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const meta = roomsMeta[slug];
   if (!meta) {
     return {
-      title: "Luxury Cabin | The Lost Cabins",
-      description: "Explore luxury cabin stays at The Lost Cabins, Thusharagiri, Kerala.",
+      title: "Secluded Cabin | The Lost Cabins",
+      description: "Explore secluded cabin stays at The Lost Cabins, Thusharagiri, Kerala.",
     };
   }
   return {

@@ -22,17 +22,28 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "The Lost Cabins | Luxury Forest Cabins Near Thusharagiri Waterfalls, Kerala",
+    default: "The Lost Cabins | Nature Resort in Thusharagiri - Premium resort in Thusharagiri",
     template: "%s | The Lost Cabins",
   },
   description:
-    "Book a stay at The Lost Cabins — Kerala's most unique forest cabin resort near Thusharagiri Waterfalls. Experience luxury A-Frame, Hexa, and Twin Pines cabins surrounded by lush jungle, private pools, and mountain views.",
+    "Looking for a premium nature resort in Thusharagiri? Book your stay at The Lost Cabins. We offer cozy and comfortable rooms in Thusharagiri, featuring unique A-Frame, Hexa, and Twin Pines cabins surrounded by lush jungle and nature.",
   keywords: [
     "The Lost Cabins",
     "forest cabin stay Kerala",
+    "resort in thusharagiri",
+    "rooms in thusharagiri",
+    "hotels in thusharagiri",
+    "places to stay in thusharagiri",
+    "thusharagiri stay",
+    "premium resort in thusharagiri",
+    "nature resort in thusharagiri",
+    "best resort in thusharagiri",
+    "thusharagiri waterfalls stay",
+    "thusharagiri tourism",
+    "nearest resort to thusharagiri waterfalls",
     "Thusharagiri resort",
     "cabin resort Kerala",
-    "luxury cabin Thusharagiri",
+    "secluded cabin Thusharagiri",
     "jungle stay Kerala",
     "nature resort Kozhikode",
     "A-Frame cabin Kerala",
@@ -41,7 +52,6 @@ export const metadata: Metadata = {
     "best resort near Thusharagiri waterfalls",
     "couple resort Kerala",
     "forest retreat Calicut",
-    "unique stays Kerala",
   ],
   metadataBase: new URL("https://www.thelostcabins.in"),
   alternates: {
@@ -51,9 +61,9 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://www.thelostcabins.in",
     siteName: "The Lost Cabins",
-    title: "The Lost Cabins | Luxury Forest Cabins Near Thusharagiri, Kerala",
+    title: "The Lost Cabins | Nature Resort in Thusharagiri - Premium resort in Thusharagiri",
     description:
-      "Escape to The Lost Cabins — a premium forest cabin resort nestled near Thusharagiri Waterfalls, Kerala. Book A-Frame, Hexa, or Twin Pines cabins for an unforgettable nature retreat.",
+      "Looking for a premium nature resort in Thusharagiri? Book your stay at The Lost Cabins. We offer cozy rooms and cabins nestled in nature near Thusharagiri Waterfalls.",
     images: [
       {
         url: "/images/areal.jpg",
@@ -66,9 +76,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Lost Cabins | Luxury Forest Cabins Near Thusharagiri, Kerala",
+    title: "The Lost Cabins | Nature Resort in Thusharagiri - Premium resort in Thusharagiri",
     description:
-      "Stay at The Lost Cabins — Kerala's most immersive forest cabin resort near Thusharagiri Waterfalls. Book your escape today.",
+      "Book your stay at The Lost Cabins — a premium nature resort offering the best rooms in Thusharagiri, Kerala.",
     images: ["/images/areal.jpg"],
   },
   robots: {

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     "Hexa cabin Kerala",
     "Twin Pines cabin Kerala",
     "all cabins forest resort Kerala",
-    "luxury cabin types Kerala",
+    "secluded cabin types Kerala",
     "best cabin stays Kerala",
     "cabin booking Thusharagiri",
   ],
