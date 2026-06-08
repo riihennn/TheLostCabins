@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: "%s | The Lost Cabins",
   },
   description:
-    "Looking for a premium nature resort in Thusharagiri? Book your stay at The Lost Cabins. We offer cozy and comfortable rooms in Thusharagiri, featuring unique A-Frame, Hexa, and Twin Pines cabins surrounded by lush jungle and nature.",
+    "Surrounded by dense forests, cascading waterfalls, and mist-covered trails, The Lost Cabins offers a thoughtfully crafted escape into the wild heart of Thusharagiri.",
   keywords: [
     "The Lost Cabins",
     "forest cabin stay Kerala",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     siteName: "The Lost Cabins",
     title: "The Lost Cabins | Nature Resort in Thusharagiri - Premium resort in Thusharagiri",
     description:
-      "Looking for a premium nature resort in Thusharagiri? Book your stay at The Lost Cabins. We offer cozy rooms and cabins nestled in nature near Thusharagiri Waterfalls.",
+      "Surrounded by dense forests, cascading waterfalls, and mist-covered trails, The Lost Cabins offers a thoughtfully crafted escape into the wild heart of Thusharagiri.",
     images: [
       {
         url: "/images/areal.jpg",
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "The Lost Cabins | Nature Resort in Thusharagiri - Premium resort in Thusharagiri",
     description:
-      "Book your stay at The Lost Cabins — a premium nature resort offering the best rooms in Thusharagiri, Kerala.",
+      "Surrounded by dense forests, cascading waterfalls, and mist-covered trails, The Lost Cabins offers a thoughtfully crafted escape into the wild heart of Thusharagiri.",
     images: ["/images/areal.jpg"],
   },
   robots: {
@@ -117,7 +117,7 @@ export default function RootLayout({
               "@type": "Resort",
               "name": "The Lost Cabins",
               "image": "https://www.thelostcabins.in/images/areal.jpg",
-              "description": "Premium nature resort in Thusharagiri offering secluded A-Frame, Hexa, and Twin Pines cabins.",
+              "description": "Surrounded by dense forests, cascading waterfalls, and mist-covered trails, The Lost Cabins offers a thoughtfully crafted escape into the wild heart of Thusharagiri.",
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Thusharagiri",
