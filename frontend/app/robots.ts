@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/_next/static/'],
       },
     ],
-    sitemap: 'https://thelostcabins.in/sitemap.xml',
+    sitemap: 'https://www.thelostcabins.in/sitemap.xml',
   };
 }

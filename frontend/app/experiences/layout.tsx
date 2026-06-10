@@ -1,19 +1,26 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Experiences — Waterfalls, Trekking & More | The Lost Cabins, Kerala",
+  title: "Things to Do in Thusharagiri | Trekking, Waterfalls & Experiences | The Lost Cabins",
   description:
-    "Explore unique experiences near The Lost Cabins — trek to Thusharagiri Waterfalls, enjoy birdwatching in the Western Ghats forest, relax by the pool, and immerse yourself in Kerala's lush tropical nature.",
+    "Explore the best experiences near The Lost Cabins, Thusharagiri, Kerala — trek to Thusharagiri Waterfalls, enjoy birdwatching in the Western Ghats, relax by the pool, and immerse yourself in Kerala's lush nature near Kozhikode and Wayanad.",
   keywords: [
-    "Thusharagiri waterfall trekking",
-    "experiences near Thusharagiri",
-    "things to do Thusharagiri",
-    "Kerala forest activities",
-    "birdwatching Kerala",
-    "nature experiences Kerala resort",
-    "waterfall trek Kerala",
-    "The Lost Cabins experiences",
-    "jungle activities Calicut",
+    "things to do in thusharagiri",
+    "thusharagiri experiences",
+    "thusharagiri trekking",
+    "thusharagiri waterfall trekking",
+    "experiences near thusharagiri",
+    "activities near thusharagiri resort",
+    "wayanad thusharagiri activities",
+    "thusharagiri tourism",
+    "things to do near thusharagiri waterfalls",
+    "birdwatching thusharagiri",
+    "nature activities kozhikode",
+    "jungle activities calicut",
+    "waterfall trek kerala",
+    "forest activities thusharagiri",
+    "nature experiences kerala resort",
+    "thusharagiri adventure",
   ],
   alternates: {
     canonical: "/experiences",

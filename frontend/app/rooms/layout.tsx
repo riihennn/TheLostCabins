@@ -1,18 +1,29 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Our Cabins — A-Frame, Hexa & Twin Pines | The Lost Cabins, Kerala",
+  title: "Cabins & Rooms in Thusharagiri | A-Frame, Hexa & Twin Pines | The Lost Cabins",
   description:
-    "Explore all cabin types at The Lost Cabins near Thusharagiri, Kerala — the A-Frame Cabin with glass forest walls, the Hexa Cabin with pool views, and the Twin Pines Cabins with misty mountain vistas. Book your ideal cabin stay today.",
+    "Browse all cabin rooms at The Lost Cabins, Thusharagiri, Kerala — A-Frame Cabin with glass forest walls, Hexa Cabin with private pool views, and Twin Pines Cabins with misty mountain vistas. Book your ideal room in Thusharagiri today.",
   keywords: [
-    "cabins The Lost Cabins",
-    "A-Frame cabin Thusharagiri",
-    "Hexa cabin Kerala",
-    "Twin Pines cabin Kerala",
-    "all cabins forest resort Kerala",
-    "secluded cabin types Kerala",
-    "best cabin stays Kerala",
-    "cabin booking Thusharagiri",
+    "rooms in thusharagiri",
+    "rooms thusharagiri",
+    "cabins thusharagiri",
+    "thusharagiri rooms",
+    "cabin rooms thusharagiri",
+    "rooms near thusharagiri waterfalls",
+    "hotel rooms thusharagiri kerala",
+    "thusharagiri accommodation",
+    "A-Frame cabin thusharagiri",
+    "Hexa cabin thusharagiri",
+    "Twin Pines cabin thusharagiri",
+    "forest cabin rooms kerala",
+    "secluded cabin stay kerala",
+    "cabin booking thusharagiri",
+    "rooms thasharagiri",
+    "rooms thusharagari",
+    "resort rooms kozhikode",
+    "cabin types kerala resort",
+    "best cabin stays thusharagiri",
   ],
   alternates: {
     canonical: "/rooms",
@@ -21,24 +32,24 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://www.thelostcabins.in/rooms",
     siteName: "The Lost Cabins",
-    title: "All Cabins — A-Frame, Hexa & Twin Pines | The Lost Cabins, Kerala",
+    title: "Cabins & Rooms in Thusharagiri | A-Frame, Hexa & Twin Pines | The Lost Cabins",
     description:
-      "Choose from A-Frame, Hexa, and Twin Pines cabins at The Lost Cabins near Thusharagiri Waterfalls, Kerala. Each cabin offers a unique nature-immersive experience.",
+      "Choose from A-Frame, Hexa, and Twin Pines cabin rooms at The Lost Cabins near Thusharagiri Waterfalls, Kerala. Book your nature-immersive stay today.",
     images: [
       {
         url: "/images/areal.jpg",
         width: 1200,
         height: 630,
-        alt: "The Lost Cabins — Forest Cabin Resort near Thusharagiri, Kerala",
+        alt: "The Lost Cabins — Forest Cabin Rooms near Thusharagiri, Kerala",
       },
     ],
     locale: "en_IN",
   },
   twitter: {
     card: "summary_large_image",
-    title: "All Cabins | The Lost Cabins, Thusharagiri, Kerala",
+    title: "Cabins & Rooms in Thusharagiri | The Lost Cabins, Kerala",
     description:
-      "Explore A-Frame, Hexa, and Twin Pines cabin options at The Lost Cabins near Thusharagiri Waterfalls, Kerala.",
+      "A-Frame, Hexa, and Twin Pines cabin rooms at The Lost Cabins near Thusharagiri Waterfalls, Kerala.",
     images: ["/images/areal.jpg"],
   },
 };

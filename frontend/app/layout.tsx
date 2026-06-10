@@ -22,36 +22,66 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "The Lost Cabins | Nature Resort in Thusharagiri - Premium resort in Thusharagiri",
-    template: "%s | The Lost Cabins",
+    default: "The Lost Cabins | Best Resort in Thusharagiri, Kerala — Nature Cabin Stay",
+    template: "%s | The Lost Cabins, Thusharagiri",
   },
   description:
-    "Surrounded by dense forests, cascading waterfalls, and mist-covered trails, The Lost Cabins offers a thoughtfully crafted escape into the wild heart of Thusharagiri.",
+    "The Lost Cabins is a premium nature resort in Thusharagiri, Kerala — surrounded by dense forests, cascading waterfalls, and mist-covered trails. Book an A-Frame, Hexa, or Twin Pines cabin for an unforgettable stay near Thusharagiri Waterfalls, Kozhikode.",
   keywords: [
-    "The Lost Cabins",
-    "forest cabin stay Kerala",
+    // Primary location queries
     "resort in thusharagiri",
+    "thusharagiri resort",
+    "thusharagiri resort kerala",
+    "best resort in thusharagiri",
+    "resort near thusharagiri waterfalls",
+    "resort thusharagiri kozhikode",
+    "resort in thusharagiri calicut",
+    // Rooms / cabin queries
     "rooms in thusharagiri",
+    "rooms thusharagiri",
+    "cabin rooms thusharagiri",
+    "thusharagiri cabin stay",
+    "thusharagiri rooms",
+    "rooms near thusharagiri waterfalls",
+    "hotel rooms thusharagiri",
+    // Wayanad proximity queries
+    "resort near wayanad thusharagiri",
+    "resort in wayanad thusharagiri",
+    "wayanad thusharagiri resort",
+    "wayanad border resort kerala",
+    // Kozhikode / Calicut
+    "resort near kozhikode",
+    "resort calicut wayanad",
+    "nature resort kozhikode",
+    "forest resort kozhikode",
+    // Hotels / stay
     "hotels in thusharagiri",
     "places to stay in thusharagiri",
     "thusharagiri stay",
+    "thusharagiri accommodation",
+    "thusharagiri hotel",
+    // Common misspellings
+    "thasharagiri resort",
+    "thusharagari resort",
+    "thusaragiri resort",
+    "thusharagiri reasort",
+    // Long-tail high-intent
     "premium resort in thusharagiri",
     "nature resort in thusharagiri",
-    "best resort in thusharagiri",
-    "thusharagiri waterfalls stay",
-    "thusharagiri tourism",
     "nearest resort to thusharagiri waterfalls",
-    "Thusharagiri resort",
-    "cabin resort Kerala",
-    "secluded cabin Thusharagiri",
-    "jungle stay Kerala",
-    "nature resort Kozhikode",
+    "luxury cabin stay thusharagiri",
+    "couple resort thusharagiri",
+    "forest cabin resort thusharagiri",
+    "thusharagiri tourism resort",
+    "thusharagiri waterfalls stay",
+    // Brand
+    "The Lost Cabins",
+    "Lost Cabins thusharagiri",
     "A-Frame cabin Kerala",
-    "Hexa cabin",
-    "Twin Pines cabin",
-    "best resort near Thusharagiri waterfalls",
-    "couple resort Kerala",
-    "forest retreat Calicut",
+    "Hexa cabin thusharagiri",
+    "Twin Pines cabin Kerala",
+    "jungle stay kerala",
+    "forest retreat calicut",
   ],
   metadataBase: new URL("https://www.thelostcabins.in"),
   alternates: {
@@ -61,9 +91,9 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://www.thelostcabins.in",
     siteName: "The Lost Cabins",
-    title: "The Lost Cabins | Nature Resort in Thusharagiri - Premium resort in Thusharagiri",
+    title: "The Lost Cabins | Best Resort in Thusharagiri, Kerala",
     description:
-      "Surrounded by dense forests, cascading waterfalls, and mist-covered trails, The Lost Cabins offers a thoughtfully crafted escape into the wild heart of Thusharagiri.",
+      "Premium nature resort in Thusharagiri, Kerala. Stay in A-Frame, Hexa, or Twin Pines forest cabins near Thusharagiri Waterfalls. Book your escape today.",
     images: [
       {
         url: "/images/areal.jpg",
@@ -76,9 +106,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Lost Cabins | Nature Resort in Thusharagiri - Premium resort in Thusharagiri",
+    title: "The Lost Cabins | Best Resort in Thusharagiri, Kerala",
     description:
-      "Surrounded by dense forests, cascading waterfalls, and mist-covered trails, The Lost Cabins offers a thoughtfully crafted escape into the wild heart of Thusharagiri.",
+      "Premium nature resort in Thusharagiri, Kerala. Stay in A-Frame, Hexa, or Twin Pines forest cabins near Thusharagiri Waterfalls.",
     images: ["/images/areal.jpg"],
   },
   robots: {
@@ -114,19 +144,49 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Resort",
+              "@type": ["Resort", "LodgingBusiness"],
               "name": "The Lost Cabins",
-              "image": "https://www.thelostcabins.in/images/areal.jpg",
-              "description": "Surrounded by dense forests, cascading waterfalls, and mist-covered trails, The Lost Cabins offers a thoughtfully crafted escape into the wild heart of Thusharagiri.",
+              "alternateName": "Lost Cabins Thusharagiri",
+              "image": [
+                "https://www.thelostcabins.in/images/areal.jpg",
+                "https://www.thelostcabins.in/images/Aframe1.jpg",
+                "https://www.thelostcabins.in/images/Hexa_image/IMG_7816.jpg"
+              ],
+              "description": "Surrounded by dense forests, cascading waterfalls, and mist-covered trails, The Lost Cabins offers a thoughtfully crafted escape into the wild heart of Thusharagiri, Kerala.",
               "address": {
                 "@type": "PostalAddress",
+                "streetAddress": "Thusharagiri",
                 "addressLocality": "Thusharagiri",
                 "addressRegion": "Kerala",
+                "postalCode": "673575",
                 "addressCountry": "IN"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 11.5285,
+                "longitude": 75.8542
               },
               "telephone": "+91-8075608994",
               "url": "https://www.thelostcabins.in",
-              "priceRange": "$$"
+              "sameAs": [
+                "https://www.instagram.com/the_lostcabins"
+              ],
+              "priceRange": "₹₹₹",
+              "checkinTime": "14:00",
+              "checkoutTime": "11:00",
+              "starRating": {
+                "@type": "Rating",
+                "ratingValue": "4"
+              },
+              "amenityFeature": [
+                { "@type": "LocationFeatureSpecification", "name": "Private Pool", "value": true },
+                { "@type": "LocationFeatureSpecification", "name": "Forest View", "value": true },
+                { "@type": "LocationFeatureSpecification", "name": "Free WiFi", "value": true },
+                { "@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true },
+                { "@type": "LocationFeatureSpecification", "name": "Nature Trekking", "value": true },
+                { "@type": "LocationFeatureSpecification", "name": "Waterfall Access", "value": true }
+              ],
+              "tourBookingPage": "https://www.thelostcabins.in/booking"
             })
           }}
         />

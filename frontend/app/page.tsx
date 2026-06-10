@@ -14,6 +14,10 @@ export default function Home() {
 
   return (
     <main className="w-full overflow-x-hidden relative text-foreground">
+      {/* Visually hidden h1 for SEO — does not affect visual design */}
+      <h1 style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0,0,0,0)', whiteSpace: 'nowrap', border: 0 }}>
+        The Lost Cabins — Nature Resort in Thusharagiri, Kerala | Forest Cabin Stay
+      </h1>
 
       {/* Top Hero Section */}
       <HeroCarousel />

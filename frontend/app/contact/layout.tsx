@@ -5,11 +5,18 @@ export const metadata: Metadata = {
   description:
     "Contact The Lost Cabins to inquire about cabin availability, bookings, or any questions about your stay near Thusharagiri Waterfalls, Kerala. We're here to help plan your perfect forest retreat.",
   keywords: [
-    "contact The Lost Cabins",
-    "The Lost Cabins phone number",
-    "Thusharagiri resort contact",
-    "book cabin Kerala",
-    "cabin resort inquiry Kerala",
+    "contact thusharagiri resort",
+    "book resort thusharagiri",
+    "thusharagiri resort booking",
+    "thusharagiri resort phone number",
+    "book cabin thusharagiri kerala",
+    "resort booking thusharagiri",
+    "contact the lost cabins",
+    "the lost cabins phone number",
+    "thusharagiri accommodation booking",
+    "book rooms thusharagiri",
+    "wayanad thusharagiri resort contact",
+    "resort inquiry kozhikode",
   ],
   alternates: {
     canonical: "/contact",

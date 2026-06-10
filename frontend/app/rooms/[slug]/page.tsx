@@ -9,7 +9,7 @@ const roomsData = {
   "a-frame-cabin": {
     name: "A-Frame Cabin",
     description: "Overlooking a lush forest, these guestrooms offer an unparalleled view of the tropical greenery. While the bedroom can be overwhelming, thanks to the extra-large glass wall, that opens up the indoor space into the outer, the balcony furniture is set up for you to slow down and take it all in.",
-    features: { bed: "1 Luxury Double Bed", capacity: "Accommodates 2 Adults", view: "Balcony/terrace", size: "480 Sq.ft" },
+    features: { bed: "2 Luxury Bedrooms", capacity: "Accommodates 4 Adults", view: "Balcony/terrace", size: "670 Sq.ft" },
     mainImage: "/images/Aframe1.jpg",
     carouselImages: [
       { src: "/images/A-Frame_image/IMG_7839.jpg", section: "Exterior" },
@@ -30,7 +30,7 @@ const roomsData = {
   "hexa-cabin": {
     name: "Hexa Cabin",
     description: "The ultimate luxury, a room that extends to a pool, which blends into nature. Enjoy the seamless transition between indoor comfort and outdoor serenity, complete with high-end furnishings and spectacular panoramic views.",
-    features: { bed: "1 King Size Bed", capacity: "Accommodates 2 Adults", view: "Private Pool View", size: "650 Sq.ft" },
+    features: { bed: "1 Luxury Double Bed", capacity: "Accommodates 2 Adults", view: "Private Pool View", size: "480 Sq.ft" },
     mainImage: "/images/Hexa_image/IMG_7816.jpg",
     carouselImages: [
       { src: "/images/Hexa_image/IMG_7816.jpg", section: "Exterior" },
