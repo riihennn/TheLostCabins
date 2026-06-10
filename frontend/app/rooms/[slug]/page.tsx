@@ -9,7 +9,7 @@ const roomsData = {
   "a-frame-cabin": {
     name: "A-Frame Cabin",
     description: "Overlooking a lush forest, these guestrooms offer an unparalleled view of the tropical greenery. While the bedroom can be overwhelming, thanks to the extra-large glass wall, that opens up the indoor space into the outer, the balcony furniture is set up for you to slow down and take it all in.",
-    features: { bed: "2 Luxury Bedrooms", capacity: "Accommodates 4 Adults", view: "Balcony/terrace", size: "670 Sq.ft" },
+    features: { bed: "2 Luxury Bedrooms", capacity: "Accommodates 4 Adults", view: "Balcony/terrace", size: "670 Sq.ft", suitedFor: "Family Friendly" },
     mainImage: "/images/Aframe1.jpg",
     carouselImages: [
       { src: "/images/A-Frame_image/IMG_7839.jpg", section: "Exterior" },
@@ -30,7 +30,7 @@ const roomsData = {
   "hexa-cabin": {
     name: "Hexa Cabin",
     description: "The ultimate luxury, a room that extends to a pool, which blends into nature. Enjoy the seamless transition between indoor comfort and outdoor serenity, complete with high-end furnishings and spectacular panoramic views.",
-    features: { bed: "1 Luxury Double Bed", capacity: "Accommodates 2 Adults", view: "Private Pool View", size: "480 Sq.ft" },
+    features: { bed: "1 Luxury Double Bed", capacity: "Accommodates 2 Adults", view: "Private Pool View", size: "480 Sq.ft", suitedFor: "Couple Friendly" },
     mainImage: "/images/Hexa_image/IMG_7816.jpg",
     carouselImages: [
       { src: "/images/Hexa_image/IMG_7816.jpg", section: "Exterior" },
@@ -52,7 +52,7 @@ const roomsData = {
   "twin-pines-cabin-1": {
     name: "Twin Pines Cabin 1",
     description: "It is not every day that you wake up to a view of the mist-covered mountain from your bed. This cozy, wooden-finished cabin offers the perfect retreat for couples looking to reconnect with nature.",
-    features: { bed: "1 Luxury Double Bed", capacity: "Accommodates 2 Adults", view: "Mountain View", size: "520 Sq.ft" },
+    features: { bed: "1 Luxury Double Bed", capacity: "Accommodates 2 Adults", view: "Mountain View", size: "520 Sq.ft", suitedFor: "Couple Friendly" },
     mainImage: "/images/Twinpines_image/IMG_7813.jpg",
     carouselImages: [
       { src: "/images/Twinpines_image/IMG_7813.jpg", section: "Exterior" },
@@ -77,7 +77,7 @@ const roomsData = {
   "twin-pines-cabin-2": {
     name: "Twin Pines Cabin 2",
     description: "Experience the calming sound of the nearby stream from the comfort of your private deck. This cabin provides a serene, secluded atmosphere surrounded by towering pines.",
-    features: { bed: "1 Luxury Double Bed", capacity: "Accommodates 2 Adults", view: "Forest & Stream View", size: "520 Sq.ft" },
+    features: { bed: "1 Luxury Double Bed", capacity: "Accommodates 2 Adults", view: "Forest & Stream View", size: "520 Sq.ft", suitedFor: "Couple Friendly" },
     mainImage: "/images/Twinpines_image/IMG_7835.jpg",
     carouselImages: [
       { src: "/images/Twinpines_image/IMG_7831.jpg", section: "Exterior" },
@@ -239,6 +239,10 @@ export default function RoomPage({ params }: { params: Promise<{ slug: string }>
             <div className="flex items-center gap-4 text-[#565656]">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg>
               <span className="font-sans font-light text-lg">{room.features.size}</span>
+            </div>
+            <div className="flex items-center gap-4 text-[#565656]">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" /></svg>
+              <span className="font-sans font-light text-lg">{room.features.suitedFor}</span>
             </div>
           </div>
 
