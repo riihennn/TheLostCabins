@@ -124,7 +124,7 @@ export default function RootLayout({
                 "addressRegion": "Kerala",
                 "addressCountry": "IN"
               },
-              "telephone": "+91-8590203812",
+              "telephone": "+91-8075608994",
               "url": "https://www.thelostcabins.in",
               "priceRange": "$$"
             })

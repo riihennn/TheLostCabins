@@ -37,7 +37,7 @@ export default function Footer() {
         <div className="flex flex-col gap-3 font-sans font-light">
           <p className="font-medium tracking-wide uppercase text-xs mb-1 opacity-80">Get in Touch</p>
           <a href="mailto:thelostcabins@gmail.com" className="hover:opacity-70 transition-opacity">thelostcabins@gmail.com</a>
-          <a href="tel:+91 88918 63034" className="hover:opacity-70 transition-opacity">+91 88918 63034</a>
+          <a href="tel:+918075608994" className="hover:opacity-70 transition-opacity">+91 8075608994</a>
         </div>
 
       </div>

@@ -4,7 +4,7 @@ import React from 'react';
 export default function WhatsAppIcon() {
   return (
     <a
-      href="https://api.whatsapp.com/send?phone=918590203812"
+      href="https://api.whatsapp.com/send?phone=918075608994"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-[60] flex items-center gap-2 group"
