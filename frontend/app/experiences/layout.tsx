@@ -34,7 +34,7 @@ export const metadata: Metadata = {
       "Discover trekking, waterfalls, wildlife, and nature activities near The Lost Cabins, a forest cabin resort in Thusharagiri, Kerala.",
     images: [
       {
-        url: "/images/areal.jpg",
+        url: "/images/Aframe1.jpg",
         width: 1200,
         height: 630,
         alt: "The Lost Cabins — Experiences near Thusharagiri, Kerala",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     title: "Experiences | The Lost Cabins, Thusharagiri, Kerala",
     description:
       "Trekking, waterfalls, birdwatching, and more — explore unforgettable experiences near The Lost Cabins in Thusharagiri, Kerala.",
-    images: ["/images/areal.jpg"],
+    images: ["/images/Aframe1.jpg"],
   },
 };
 

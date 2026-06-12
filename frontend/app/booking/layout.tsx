@@ -27,7 +27,7 @@ export const metadata: Metadata = {
       "Reserve your cabin at The Lost Cabins — A-Frame, Hexa, or Twin Pines. A forest retreat near Thusharagiri Waterfalls, Kerala. Book now for the best rates.",
     images: [
       {
-        url: "/images/areal.jpg",
+        url: "/images/Aframe1.jpg",
         width: 1200,
         height: 630,
         alt: "The Lost Cabins — Book a Cabin Stay near Thusharagiri, Kerala",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: "Book a Cabin | The Lost Cabins, Thusharagiri, Kerala",
     description:
       "Book your forest cabin stay at The Lost Cabins near Thusharagiri Waterfalls, Kerala. A-Frame, Hexa, and Twin Pines available.",
-    images: ["/images/areal.jpg"],
+    images: ["/images/Aframe1.jpg"],
   },
   robots: {
     index: false,

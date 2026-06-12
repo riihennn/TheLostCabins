@@ -95,7 +95,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: meta.description,
       images: [
         {
-          url: "/images/areal.jpg",
+          url: "/images/Aframe1.jpg",
           width: 1200,
           height: 630,
           alt: `${meta.title} — The Lost Cabins, Thusharagiri, Kerala`,
@@ -107,7 +107,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       card: "summary_large_image",
       title: meta.title,
       description: meta.description,
-      images: ["/images/areal.jpg"],
+      images: ["/images/Aframe1.jpg"],
     },
   };
 }

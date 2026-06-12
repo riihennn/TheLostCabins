@@ -30,7 +30,7 @@ export const metadata: Metadata = {
       "Reach out to The Lost Cabins for bookings, availability, and questions about your cabin stay near Thusharagiri Waterfalls, Kerala.",
     images: [
       {
-        url: "/images/areal.jpg",
+        url: "/images/Aframe1.jpg",
         width: 1200,
         height: 630,
         alt: "The Lost Cabins — Forest Cabin Resort near Thusharagiri, Kerala",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Contact The Lost Cabins | Thusharagiri, Kerala",
     description:
       "Get in touch with The Lost Cabins for cabin bookings and inquiries. Forest retreat near Thusharagiri Waterfalls, Kerala.",
-    images: ["/images/areal.jpg"],
+    images: ["/images/Aframe1.jpg"],
   },
 };
 

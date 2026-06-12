@@ -96,7 +96,7 @@ export const metadata: Metadata = {
       "Premium nature resort in Thusharagiri, Kerala. Stay in A-Frame, Hexa, or Twin Pines forest cabins near Thusharagiri Waterfalls. Book your escape today.",
     images: [
       {
-        url: "/images/areal.jpg",
+        url: "/images/Aframe1.jpg",
         width: 1200,
         height: 630,
         alt: "The Lost Cabins — Aerial view of forest cabin resort near Thusharagiri, Kerala",
@@ -109,7 +109,7 @@ export const metadata: Metadata = {
     title: "The Lost Cabins | Best Resort in Thusharagiri, Kerala",
     description:
       "Premium nature resort in Thusharagiri, Kerala. Stay in A-Frame, Hexa, or Twin Pines forest cabins near Thusharagiri Waterfalls.",
-    images: ["/images/areal.jpg"],
+    images: ["/images/Aframe1.jpg"],
   },
   robots: {
     index: true,
@@ -148,7 +148,7 @@ export default function RootLayout({
               "name": "The Lost Cabins",
               "alternateName": "Lost Cabins Thusharagiri",
               "image": [
-                "https://www.thelostcabins.in/images/areal.jpg",
+                "https://www.thelostcabins.in/images/Aframe1.jpg",
                 "https://www.thelostcabins.in/images/Aframe1.jpg",
                 "https://www.thelostcabins.in/images/Hexa_image/IMG_7816.jpg"
               ],

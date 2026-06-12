@@ -8,7 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 1,
       images: [
-        'https://www.thelostcabins.in/images/areal.jpg',
+        'https://www.thelostcabins.in/images/Aframe1.jpg',
         'https://www.thelostcabins.in/images/Aframe1.jpg',
         'https://www.thelostcabins.in/images/Hexa_image/IMG_7816.jpg',
         'https://www.thelostcabins.in/images/IMG_7825.jpg',
@@ -74,7 +74,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.9,
       images: [
-        'https://www.thelostcabins.in/images/areal.jpg',
+        'https://www.thelostcabins.in/images/Aframe1.jpg',
       ],
     },
     {
@@ -83,7 +83,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.6,
       images: [
-        'https://www.thelostcabins.in/images/areal.jpg',
+        'https://www.thelostcabins.in/images/Aframe1.jpg',
       ],
     },
     {

@@ -24,7 +24,7 @@ const roomsData = {
       { src: "/images/A-Frame_image/IMG_7835.jpg", section: "2 Bedroom" },
       { src: "/images/A-Frame_image/IMG_7844.jpg", section: "Pool" },
       { src: "/images/A-Frame_image/IMG_7843.jpg", section: "Pool" },
-      { src: "/images/areal.jpg", section: "Pool" }
+      { src: "/images/Aframe1.jpg", section: "Pool" }
     ]
   },
   "hexa-cabin": {
