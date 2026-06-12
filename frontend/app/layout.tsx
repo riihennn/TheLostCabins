@@ -166,7 +166,7 @@ export default function RootLayout({
                 "latitude": 11.5285,
                 "longitude": 75.8542
               },
-              "telephone": "+91-8075608994",
+              "telephone": "+91-8891863034",
               "url": "https://www.thelostcabins.in",
               "sameAs": [
                 "https://www.instagram.com/the_lostcabins"
