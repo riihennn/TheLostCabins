@@ -44,7 +44,7 @@ export default function Contact() {
            <div>
              <span className="font-sans text-xs tracking-widest uppercase text-[#34673f] block mb-2">Phone</span>
              <p className="font-sans font-light text-lg text-[#565656]">
-               <a href="tel:+918848620887" className="hover:text-[#34673f] transition-colors">+91 88486 20887</a>
+               <a href="tel:+918891863034" className="hover:text-[#34673f] transition-colors">+91 88918 63034</a>
              </p>
            </div>
            <div>
