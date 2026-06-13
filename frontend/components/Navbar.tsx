@@ -69,11 +69,11 @@ export default function Navbar() {
         className={`fixed inset-0 bg-[#fdfa99] z-[50] transition-transform duration-700 ease-[cubic-bezier(0.76,0,0.24,1)] overflow-y-auto ${isMenuOpen ? 'translate-y-0' : '-translate-y-full'
           }`}
       >
-        <div className="min-h-[100dvh] flex flex-col px-4 sm:px-6 md:px-12 pt-10 pb-12">
+        <div className="min-h-[100dvh] flex flex-col px-4 sm:px-6 md:px-12 pt-10 pb-8 lg:pb-12">
           {/* Top Header of Overlay */}
           <div className="w-full flex justify-center items-center relative flex-shrink-0">
             {/* Centered Logo */}
-            <Link href="/" onClick={() => setIsMenuOpen(false)} className="relative w-32 h-16 block cursor-pointer">
+            <Link href="/" onClick={() => setIsMenuOpen(false)} className="relative w-24 h-12 md:w-32 md:h-16 block cursor-pointer">
               <Image
                 src="/images/LostCabins-Logo-Green.png"
                 alt="Lost Cabins Logo"
@@ -92,13 +92,14 @@ export default function Navbar() {
           </div>
 
           {/* Links Center */}
-          <div className="my-auto flex flex-col items-center gap-6 md:gap-8 py-12 flex-shrink-0">
+          <div className="my-auto flex flex-col items-center gap-5 md:gap-6 lg:gap-8 py-8 lg:py-12 flex-shrink-0">
             {['Home', 'About Us', 'Rooms', 'Experiences', 'Contact Us'].map((item, i) => {
               const linkPath = item === 'About Us' ? '/about' : item === 'Home' ? '/' : item === 'Rooms' ? '/rooms' : item === 'Experiences' ? '/experiences' : item === 'Contact Us' ? '/contact' : '#';
               return (
                 <div
                   key={item}
-                  className={`overflow-hidden transition-all duration-700 delay-[${100 + i * 100}ms] ${isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+                  className={`overflow-hidden transition-all duration-700 ${isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+                  style={{ transitionDelay: `${100 + i * 100}ms` }}
                 >
                   <a
                     href={linkPath}
@@ -106,7 +107,7 @@ export default function Navbar() {
                       if (linkPath === '#') e.preventDefault();
                       setIsMenuOpen(false);
                     }}
-                    className="font-serif text-3xl sm:text-4xl md:text-[3.5rem] text-[#2a2a2a] hover:text-[#34673f] transition-colors leading-tight"
+                    className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] text-[#2a2a2a] hover:text-[#34673f] transition-colors leading-tight block"
                   >
                     {item}
                   </a>
@@ -116,15 +117,18 @@ export default function Navbar() {
           </div>
 
           {/* Social Icons Bottom */}
-          <div className={`flex justify-center gap-8 transition-all duration-700 delay-500 flex-shrink-0 ${isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          <div 
+            className={`flex justify-center gap-6 md:gap-8 transition-all duration-700 flex-shrink-0 ${isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+            style={{ transitionDelay: '600ms' }}
+          >
             <a href="https://www.instagram.com/the_lostcabins" className="text-[#2a2a2a] hover:text-[#34673f] transition-colors">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              <svg width="24" height="24" className="md:w-7 md:h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
             </a>
             <a href="#" className="text-[#2a2a2a] hover:text-[#34673f] transition-colors">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+              <svg width="24" height="24" className="md:w-7 md:h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
             </a>
             <a href="#" className="text-[#2a2a2a] hover:text-[#34673f] transition-colors">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+              <svg width="24" height="24" className="md:w-7 md:h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
             </a>
           </div>
         </div>
@@ -132,3 +136,4 @@ export default function Navbar() {
     </>
   );
 }
+

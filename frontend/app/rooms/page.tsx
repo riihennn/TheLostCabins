@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Rooms & Tariffs | The Lost Cabins | Thusharagiri, Kerala",
-  description: "Discover our A-Frame Cabin, Hexa Cabin, and Twin Pines Cabins at The Lost Cabins. Luxury forest stay with pool views, forest views, and mountain views in Thusharagiri, Kerala.",
+  description: "Discover our A-Frame Cabin, Hexa Cabin, and Twin Pines Cabins at The Lost Cabins. Premium forest stay with pool views, forest views, and mountain views in Thusharagiri, Kerala.",
 };
 
 export default function Rooms() {
@@ -74,7 +74,7 @@ export default function Rooms() {
               Hexa Cabin
             </h2>
             <p className="font-sans font-light text-base sm:text-lg md:text-xl text-[#565656] leading-relaxed mb-8 sm:mb-10">
-              The ultimate luxury, a room that extends to a pool, which blends into nature.
+              The ultimate premium escape, a room that extends to a pool, which blends into nature.
             </p>
             <Link href="/rooms/hexa-cabin" className="self-start border border-[#2a2a2a] text-[#2a2a2a] px-6 sm:px-8 py-3 text-sm tracking-wider uppercase hover:bg-[#2a2a2a] hover:text-white transition-colors font-sans inline-block text-center">
               View More
@@ -134,7 +134,7 @@ export default function Rooms() {
               Twin Pines Cabin 2
             </h2>
             <p className="font-sans font-light text-base sm:text-lg md:text-xl text-[#565656] leading-relaxed mb-8 sm:mb-10">
-              The ultimate luxury, a room that extends to a pool, which blends into nature.
+              The ultimate premium escape, a room that extends to a pool, which blends into nature.
             </p>
             <Link href="/rooms/twin-pines-cabin-2" className="self-start border border-[#2a2a2a] text-[#2a2a2a] px-6 sm:px-8 py-3 text-sm tracking-wider uppercase hover:bg-[#2a2a2a] hover:text-white transition-colors font-sans inline-block text-center">
               View More

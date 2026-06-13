@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     "premium resort in thusharagiri",
     "nature resort in thusharagiri",
     "nearest resort to thusharagiri waterfalls",
-    "luxury cabin stay thusharagiri",
+    "premium cabin stay thusharagiri",
     "couple resort thusharagiri",
     "forest cabin resort thusharagiri",
     "thusharagiri tourism resort",
