@@ -9,7 +9,19 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "www.juicer.io",
+        hostname: "**.juicer.io",
+      },
+      {
+        protocol: "https",
+        hostname: "**.fbcdn.net",
+      },
+      {
+        protocol: "https",
+        hostname: "**.instagram.com",
+      },
+      {
+        protocol: "https",
+        hostname: "**.cloudfront.net",
       },
     ],
   },

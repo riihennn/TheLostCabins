@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState, useRef, useCallback } from "react";
-import Image from "next/image";
 
 interface InstagramPost {
   id: string;
@@ -141,11 +140,11 @@ function InfiniteCarousel({ items, username }: { items: Item[]; username: string
             style={{ width: `${100 / tripled.length}%`, flexShrink: 0 }}
             className="relative aspect-square overflow-hidden group"
           >
-            <Image
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               src={item.src}
               alt={item.alt}
-              fill
-              className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+              className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
             />
             <a
               href={item.href}
