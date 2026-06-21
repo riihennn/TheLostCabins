@@ -101,10 +101,10 @@ export default function Home() {
   );
 
   const instagramContent = (
-    <section key="instagram" className="py-16 sm:py-20 md:min-h-screen md:py-12 flex flex-col md:justify-center text-center overflow-hidden">
+    <section key="instagram" className="pt-10 pb-4 sm:pt-16 sm:pb-10 md:min-h-screen md:py-12 flex flex-col md:justify-center text-center overflow-hidden">
       <div className="px-6 md:px-16 lg:px-32">
       <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-6 text-[#222]">Follow Our Flow</h2>
-      <div className="flex items-center justify-center gap-3 mb-12 text-lg text-[#555]">
+      <div className="flex items-center justify-center gap-3 mb-6 sm:mb-10 md:mb-12 text-lg text-[#555]">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
         <a
           href="https://www.instagram.com/the_lostcabins"
