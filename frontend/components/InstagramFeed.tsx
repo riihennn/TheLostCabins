@@ -31,7 +31,7 @@ function InfiniteCarousel({ items, username }: { items: Item[]; username: string
 
   const [index, setIndex] = useState(total);
   const [animated, setAnimated] = useState(true);
-  const [visibleCount, setVisibleCount] = useState(4);
+  const [visibleCount, setVisibleCount] = useState(1);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const jumping = useRef(false);
 
