@@ -93,15 +93,43 @@ function InfiniteCarousel({ items, username }: { items: Item[]; username: string
   const trackWidthPct = (tripled.length / visibleCount) * 100; // % relative to container
   const translatePct = (index / tripled.length) * 100; // % relative to track
 
+  const [touchStart, setTouchStart] = useState<number | null>(null);
+  const [touchEnd, setTouchEnd] = useState<number | null>(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const minSwipeDistance = 50;
+
+  const onTouchStart = (e: React.TouchEvent) => {
+    setTouchEnd(null);
+    setTouchStart(e.targetTouches[0].clientX);
+    setIsDragging(false);
+  };
+
+  const onTouchMove = (e: React.TouchEvent) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+    setIsDragging(true);
+  };
+
+  const onTouchEndEvent = () => {
+    if (!touchStart || !touchEnd) return;
+    const distance = touchStart - touchEnd;
+    if (distance > minSwipeDistance) goNext();
+    else if (distance < -minSwipeDistance) goPrev();
+  };
+
   return (
-    <div className="relative w-full overflow-hidden group/carousel">
+    <div 
+      className="relative w-full overflow-hidden group/carousel"
+      onTouchStart={onTouchStart}
+      onTouchMove={onTouchMove}
+      onTouchEnd={onTouchEndEvent}
+    >
       {/* Left Arrow */}
       <button
         onClick={goPrev}
         aria-label="Previous"
         className="absolute left-3 top-1/2 -translate-y-1/2 z-10 p-2.5 bg-white/90 hover:bg-white
                    text-black rounded-full shadow-lg opacity-0 group-hover/carousel:opacity-100
-                   transition-all duration-300 flex items-center justify-center hover:scale-110 active:scale-95"
+                   transition-all duration-300 flex items-center justify-center hover:scale-110 active:scale-95 hidden sm:flex"
       >
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
           <polyline points="15 18 9 12 15 6" />
@@ -114,7 +142,7 @@ function InfiniteCarousel({ items, username }: { items: Item[]; username: string
         aria-label="Next"
         className="absolute right-3 top-1/2 -translate-y-1/2 z-10 p-2.5 bg-white/90 hover:bg-white
                    text-black rounded-full shadow-lg opacity-0 group-hover/carousel:opacity-100
-                   transition-all duration-300 flex items-center justify-center hover:scale-110 active:scale-95"
+                   transition-all duration-300 flex items-center justify-center hover:scale-110 active:scale-95 hidden sm:flex"
       >
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
           <polyline points="9 18 15 12 9 6" />
@@ -138,20 +166,26 @@ function InfiniteCarousel({ items, username }: { items: Item[]; username: string
           <div
             key={i}
             style={{ width: `${100 / tripled.length}%`, flexShrink: 0 }}
-            className="relative aspect-square overflow-hidden group"
+            className="relative aspect-square overflow-hidden group cursor-grab active:cursor-grabbing"
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={item.src}
               alt={item.alt}
               className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+              draggable={false}
             />
             <a
               href={item.href}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={(e) => {
+                if (isDragging) e.preventDefault();
+              }}
               className="absolute inset-0 bg-black/0 flex flex-col items-center justify-center gap-2 text-white
-                         opacity-0 group-hover:opacity-100 group-hover:bg-black/60 transition-all duration-300"
+                         opacity-0 group-hover:opacity-100 group-hover:bg-black/60 
+                         active:opacity-100 active:bg-black/60 sm:active:opacity-0
+                         transition-all duration-300"
             >
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <defs>
@@ -172,8 +206,6 @@ function InfiniteCarousel({ items, username }: { items: Item[]; username: string
           </div>
         ))}
       </div>
-
-
     </div>
   );
 }
