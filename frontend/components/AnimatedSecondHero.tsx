@@ -32,30 +32,24 @@ export default function AnimatedSecondHero() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="min-h-[80vh] flex flex-col items-center justify-center text-center px-6 md:px-12  bg-[#fdfa99] text-[#34673f] overflow-hidden">
-
+    <section ref={sectionRef} className="min-h-[80vh] flex flex-col items-center justify-center text-center px-6 md:px-12 bg-[#fdfa99] text-[#34673f] overflow-hidden">
       <div
         className="flex flex-col items-center w-full"
-        style={{
-          transform: `translateY(${offset}px)`,
-          willChange: 'transform'
-        }}
+        style={{ transform: `translateY(${offset}px)`, willChange: "transform" }}
       >
-        <p className="font-sans text-xs md:text-sm tracking-[0.2em] uppercase mb-6 font-semibold">
+        <p className="font-sans text-xs md:text-sm tracking-[0.2em] uppercase mb-6 font-semibold opacity-70">
           Lost Cabins
         </p>
         <h2 className="font-serif text-4xl md:text-5xl lg:text-[4.5rem] leading-[1.15] tracking-tight max-w-4xl mx-auto">
-          A Forest Escape Wrapped in Nature’s Embrace
+          A Forest Escape Wrapped in Nature&apos;s Embrace
         </h2>
       </div>
 
-      {/* The gap is created here. The heading will translate down into this space. */}
       <div className="h-16 md:h-24 w-full" />
 
       <p className="font-sans text-sm md:text-base leading-relaxed max-w-2xl mx-auto opacity-90 relative z-10">
         Nestled deep within the misty landscapes of Thusharagiri, Kerala, Lost Cabins offers a peaceful retreat surrounded by untouched forests, mountain breeze, and the soothing sounds of nature. Hidden away from the rush of city life, the resort is a perfectly positioned haven for travelers seeking serenity, adventure, and an authentic connection with the wild beauty of the Western Ghats.
       </p>
-
     </section>
   );
 }

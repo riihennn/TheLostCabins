@@ -101,7 +101,7 @@ export default function Home() {
   );
 
   const instagramContent = (
-    <section key="instagram" className="bg-[#fcf9f2] pt-10 pb-16 sm:pt-16 sm:pb-10 md:min-h-screen md:py-12 flex flex-col md:justify-center text-center overflow-hidden">
+    <section key="instagram" className="pt-10 pb-12 sm:pt-16 sm:pb-10 md:min-h-screen md:py-12 flex flex-col md:justify-center text-center overflow-hidden">
       <div className="px-6 md:px-16 lg:px-32">
       <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-6 text-[#222]">Follow Our Flow</h2>
       <div className="flex items-center justify-center gap-3 mb-6 sm:mb-10 md:mb-12 text-lg text-[#555]">
@@ -110,7 +110,7 @@ export default function Home() {
           href="https://www.instagram.com/the_lostcabins"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-[#cca885] transition-colors font-sans font-light tracking-wide"
+          className="hover:text-[#34673f] transition-colors font-sans font-light tracking-wide"
         >
           @the_lostcabins
         </a>
