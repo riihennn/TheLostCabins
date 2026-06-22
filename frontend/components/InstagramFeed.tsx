@@ -96,6 +96,7 @@ function InfiniteCarousel({ items, username }: { items: Item[]; username: string
   const [touchStart, setTouchStart] = useState<number | null>(null);
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
   const [isDragging, setIsDragging] = useState(false);
+  const [tappedIndex, setTappedIndex] = useState<number | null>(null);
   const minSwipeDistance = 50;
 
   const onTouchStart = (e: React.TouchEvent) => {
@@ -107,6 +108,8 @@ function InfiniteCarousel({ items, username }: { items: Item[]; username: string
   const onTouchMove = (e: React.TouchEvent) => {
     setTouchEnd(e.targetTouches[0].clientX);
     setIsDragging(true);
+    // Dismiss the hover overlay if the user starts swiping
+    setTappedIndex(null);
   };
 
   const onTouchEndEvent = () => {
@@ -180,12 +183,25 @@ function InfiniteCarousel({ items, username }: { items: Item[]; username: string
               target="_blank"
               rel="noopener noreferrer"
               onClick={(e) => {
-                if (isDragging) e.preventDefault();
+                if (isDragging) {
+                  e.preventDefault();
+                  return;
+                }
+                
+                // On mobile, require a double tap. First tap shows overlay, second navigates.
+                if (window.innerWidth < 1024) {
+                  if (tappedIndex !== i) {
+                    e.preventDefault(); // Prevent navigation on first tap
+                    setTappedIndex(i);  // Show overlay
+                  } else {
+                    setTappedIndex(null); // Second tap, let it navigate and clear overlay
+                  }
+                }
               }}
-              className="absolute inset-0 bg-black/0 flex flex-col items-center justify-center gap-2 text-white
-                         opacity-0 group-hover:opacity-100 group-hover:bg-black/60 
-                         active:opacity-100 active:bg-black/60 sm:active:opacity-0
-                         transition-all duration-300"
+              className={`absolute inset-0 flex flex-col items-center justify-center gap-2 text-white transition-all duration-300
+                         opacity-0 group-hover:opacity-100 
+                         bg-black/0 group-hover:bg-black/60
+                         ${tappedIndex === i ? '!opacity-100 !bg-black/60' : ''}`}
             >
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <defs>
