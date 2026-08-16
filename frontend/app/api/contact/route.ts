@@ -20,12 +20,12 @@ export async function POST(request: Request) {
     }
 
     const { data, error } = await resend.emails.send({
-      from: 'Lost Cabins Website <onboarding@resend.dev>',
-      to: 'rihenww@gmail.com',
+      from: 'Lost Cabins Website <booking@thelostcabins.in>',
+      to: 'rihenrw@gmail.com',
       replyTo: email,
       subject: `New Inquiry from ${name} - Lost Cabins`,
       html: `
-        <!DOCTYPE html>
+        <!DOCTYPE html
         <html>
         <head>
           <meta charset="utf-8">

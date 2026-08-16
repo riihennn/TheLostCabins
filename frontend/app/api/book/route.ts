@@ -26,8 +26,8 @@ export async function POST(request: Request) {
     }
 
     const { data, error } = await resend.emails.send({
-      from: 'Lost Cabins Website <onboarding@resend.dev>',
-      to: 'rihenww@gmail.com', // Replace with the actual recipient email if needed
+      from: 'Lost Cabins Website <booking@thelostcabins.in>',
+      to: 'rihenrw@gmail.com', // Replace with the actual recipient email if needed
       replyTo: email,
       subject: `New Booking Request from ${name} - Lost Cabins`,
       html: `
