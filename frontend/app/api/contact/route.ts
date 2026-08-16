@@ -21,7 +21,7 @@ export async function POST(request: Request) {
 
     const { data, error } = await resend.emails.send({
       from: 'Lost Cabins Website <booking@thelostcabins.in>',
-      to: 'rihenrw@gmail.com',
+      to: 'samwilfred4300@gmail.com',
       replyTo: email,
       subject: `New Inquiry from ${name} - Lost Cabins`,
       html: `
@@ -81,7 +81,7 @@ export async function POST(request: Request) {
                   <tr>
                     <td style="background-color: #f9f9f9; border-top: 1px solid #eeeeee; padding: 25px; text-align: center;">
                       <p style="color: #999999; font-size: 13px; margin: 0; line-height: 20px;">This email was automatically generated from the Lost Cabins website contact form.</p>
-                      <p style="color: #999999; font-size: 13px; margin: 8px 0 0 0; line-height: 20px;">You can simply <strong>reply</strong> to this email to respond directly to ${name}.</p>
+                      <p style="color: #999999; font-size: 13px; margin: 8px 0 0 0; line-height: 20px;">You can simply <strong>reply</strong> to this email to respond directly to ${name}, or contact the customer at their contact number: <strong>${phone || 'Not provided'}</strong>.</p>
                     </td>
                   </tr>
                 </table>
